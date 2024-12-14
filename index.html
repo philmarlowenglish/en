@@ -3,35 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Freelancer</title>
+    <meta name="description" content="Freelancer website - services and contact information">
+    <title>Your Site Name - Home</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #FFFFFF;
+        }
+
+        a {
+            color: #002855;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #002855;
+            color: #FFFFFF;
+            padding: 1rem 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 50px;
+            width: 50px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 1rem;
+        }
+
+        header nav ul li a {
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        main {
+            padding: 2rem 0;
+        }
+
+        .hero {
+            background-color: #F7F7F7;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .services .service-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact ul.social-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contact ul.social-links li a {
+            color: #002855;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #002855;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        footer nav ul li a {
+            color: #FFFFFF;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Your Name</h1>
-        <p>Freelancer | Creative Solutions | Contact Me</p>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Your Company Logo" width="50" height="50">
+            </div>
+            <div class="site-name">
+                <h1>Your Site Name</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="English">EN</a></li>
+                    <li><a href="de/index.html" aria-label="German">DE</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <!-- Main Content -->
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm a freelancer based in Germany, offering high-quality services to help businesses succeed. Whether you need [your service, e.g., web design, content writing], I’m here to help!</p>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to Your Site Name</h2>
+                <p>Your introduction text goes here. This is where you tell your visitors what you do and how you can help them.</p>
+            </div>
         </section>
-        <section id="services">
-            <h2>Services</h2>
-            <ul>
-                <li>Service 1 - Description</li>
-                <li>Service 2 - Description</li>
-                <li>Service 3 - Description</li>
-            </ul>
+
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-item">
+                    <h3>Service 1</h3>
+                    <p>Describe your first service here.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service 2</h3>
+                    <p>Describe your second service here.</p>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Let's collaborate! Feel free to email me at:</p>
-            <p><a href="mailto:yourname@example.com">yourname@example.com</a></p>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Get in touch via email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>Follow me on social media:</p>
+                <ul class="social-links">
+                    <li><a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://xing.com/profile" target="_blank" rel="noopener noreferrer">Xing</a></li>
+                </ul>
+            </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Your Company Name</p>
+            <nav>
+                <ul>
+                    <li><a href="impressum.html">Imprint</a></li>
+                    <li><a href="privacy-policy.html">Data Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
