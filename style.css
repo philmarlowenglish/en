@@ -1,95 +1,188 @@
-/* General Reset */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freelancer website - services and contact information">
+    <title>Your Site Name - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Header */
-header {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem 0;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #FFFFFF;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
+        a {
+            color: #002855;
+            text-decoration: none;
+        }
 
-header p {
-    margin: 0.5rem 0 0;
-    font-size: 1.2rem;
-}
+        a:hover {
+            text-decoration: underline;
+        }
 
-/* Main Content */
-main {
-    padding: 1rem;
-}
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-/* Sections */
-section {
-    margin-bottom: 2rem;
-}
+        /* Header */
+        header {
+            background-color: #002855;
+            color: #FFFFFF;
+            padding: 1rem 0;
+        }
 
-section h2 {
-    color: #007BFF;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-section p {
-    margin: 0.5rem 0;
-}
+        header .logo img {
+            height: 50px;
+            width: 50px;
+        }
 
-/* Services List */
-ul {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-    padding: 0;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
 
-ul li {
-    margin: 0.5rem 0;
-}
+        header nav ul li {
+            margin-left: 1rem;
+        }
 
-/* Contact */
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
+        header nav ul li a {
+            color: #FFFFFF;
+            font-weight: bold;
+        }
 
-a:hover {
-    text-decoration: underline;
-}
+        /* Main Content */
+        main {
+            padding: 2rem 0;
+        }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #333;
-    color: #fff;
-    font-size: 0.9rem;
-}
+        .hero {
+            background-color: #F7F7F7;
+            padding: 2rem 0;
+            text-align: center;
+        }
 
-/* Responsive Design */
-@media (min-width: 768px) {
-    body {
-        font-size: 1.2rem;
-    }
+        .services .service-item {
+            margin-bottom: 1.5rem;
+        }
 
-    header h1 {
-        font-size: 2.5rem;
-    }
+        .contact ul.social-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
 
-    header p {
-        font-size: 1.5rem;
-    }
+        .contact ul.social-links li a {
+            color: #002855;
+            font-weight: bold;
+        }
 
-    section h2 {
-        font-size: 1.8rem;
-    }
-}
+        /* Footer */
+        footer {
+            background-color: #002855;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        footer nav ul li a {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Your Company Logo" width="50" height="50">
+            </div>
+            <div class="site-name">
+                <h1>Your Site Name</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="English">EN</a></li>
+                    <li><a href="de/index.html" aria-label="German">DE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to Your Site Name</h2>
+                <p>Your introduction text goes here. This is where you tell your visitors what you do and how you can help them.</p>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-item">
+                    <h3>Service 1</h3>
+                    <p>Describe your first service here.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service 2</h3>
+                    <p>Describe your second service here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Get in touch via email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>Follow me on social media:</p>
+                <ul class="social-links">
+                    <li><a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://xing.com/profile" target="_blank" rel="noopener noreferrer">Xing</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Company Name</p>
+            <nav>
+                <ul>
+                    <li><a href="impressum.html">Imprint</a></li>
+                    <li><a href="privacy-policy.html">Data Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
