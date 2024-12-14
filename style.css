@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Self-hosted Montserrat Regular */
+/* Self-hosted Montserrat Medium */
 @font-face {
     font-family: 'Montserrat';
     src: url('Montserrat-Medium.otf') format('opentype');
@@ -16,8 +16,8 @@
 
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 500; /* Reflect Medium weight */
-    font-size: 16px;
+    font-weight: 500; /* Use Medium weight for readability */
+    font-size: 16px; /* Minimum font size for accessibility */
     line-height: 1.6;
     color: #333333;
     background-color: #FFFFFF;
