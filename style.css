@@ -22,6 +22,13 @@ body {
     background-color: #ffffff; /* Light background for contrast */
 }
 
+/* Layout Container Styling */
+.container {
+    max-width: 60%; /* Limit container width to 60% of the viewport */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding for content inside the container */
+}
+
 /* Header Styling */
 header {
     background-color: #000033; /* Dark Blue Background */
@@ -30,128 +37,10 @@ header {
     text-align: center;
 }
 
-/* Desktop Styles (default) */
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 60%; /* Limit the container width to 60% of the viewport */
-    margin: 0 auto; /* Center the container with equal space on both sides */
-    padding: 0 20px;
-}
-
-/* Mobile Styles (override desktop layout) */
-@media screen and (max-width: 768px) {
-    header .container {
-        max-width: 100%; /* Use full width on mobile */
-        margin: 0; /* Remove margins for mobile */
-        padding: 0 15px; /* Optional: adjust padding for mobile */
-    }
-}
-
-header .logo {
-    flex: 0 0 auto; /* Logo doesn't grow or shrink */
-    width: 10%; /* Adjust as needed */
-    display: flex;
-    align-items: center;
-}
-
-header .logo img {
-    max-width: 100%; /* Ensure the logo scales well */
-    height: auto;
-}
-
-header .site-name {
-    flex-grow: 1; /* Use remaining space */
-    text-align: center;
-}
-
-header .site-name h1 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 0; /* Remove unnecessary margin */
-}
-
-header nav {
-    flex: 0 0 auto; /* Navigation doesn't grow or shrink */
-    text-align: right;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    margin: 0;
-}
-
-header nav ul li {
-    display: inline-block; /* Ensure items are side by side */
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styling */
-section {
-    padding: 20px 20px;
-}
-
-/* Alternating Section Colors */
-.hero {
-    background-color: #ffffff;
-}
-
-.usp {
-    background-color: #f7f7f7; /* Light grey */
-}
-
-.services {
-    background-color: #ffffff;
-}
-
-.contact {
-    background-color: #f7f7f7;
-}
-
-/* Main Heading and Subheadings */
-h1, h2, h3 {
-    font-weight: 600;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-top: 20px; /* Margin after h2 */
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-top: 20px; /* Margin after h3 */
-}
-
-/* Social Media Icons */
-.social-icons, .footer-social-icons {
-    display: flex;
-    justify-content: left;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.social-icons img, .footer-social-icons img {
-    width: 24px;
-    height: 24px;
 }
 
 /* Footer Styling */
@@ -162,23 +51,14 @@ footer {
     text-align: center;
 }
 
-footer nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-footer nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-footer nav ul li a:hover {
-    text-decoration: underline;
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    /* Remove margins and make container full-width */
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 15px; /* Adjust padding for better fit */
+    }
 }
 
 /* Images */
