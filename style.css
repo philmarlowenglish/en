@@ -49,6 +49,7 @@ header .site-name h1 {
     font-size: 1.8rem;
     font-weight: 500;
     vertical-align: middle;
+    width: 50%;
 }
 
 header nav {
