@@ -43,12 +43,12 @@ header .container {
     align-items: center;
 }
 
-header nav .language-options ul {
+header nav ul {
     list-style: none; /* Remove bullet points */
-    display: flex; /* Align items horizontally */
-    gap: 10px; /* Space between languages */
-    margin: 0;
-    padding: 0;
+    display: flex;
+    gap: 15px; /* Add spacing between items */
+    margin: 0; /* Ensure no extra margin */
+    padding: 0; /* Ensure no extra padding */
 }
 
 /* Section Styling */
