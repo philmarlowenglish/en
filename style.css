@@ -24,7 +24,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #333;
+    background-color: #003366; /* Dark Blue Background */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -126,7 +126,7 @@ h3 {
 
 /* Footer Styling */
 footer {
-    background-color: #333;
+    background-color: #003366; /* Dark Blue Background */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -156,4 +156,38 @@ footer nav ul li a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Header */
+    header .site-name h1 {
+        font-size: 1.4rem; /* Smaller font size for mobile */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav items on mobile */
+    }
+
+    header nav ul li {
+        margin-bottom: 10px; /* Space between nav items */
+    }
+
+    /* Section Padding */
+    section {
+        padding: 40px 15px; /* Less padding on mobile */
+    }
+
+    /* Main Heading Sizes for Mobile */
+    h1 {
+        font-size: 2rem; /* Smaller heading size for mobile */
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
 }
