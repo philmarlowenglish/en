@@ -55,6 +55,19 @@ header nav ul li a {
     gap: 15px; /* Space between items */
 }
 
+header nav ul {
+    list-style: none; /* Remove bullets from the ul */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Ensure items are aligned horizontally */
+    gap: 15px; /* Space between items */
+}
+
+header nav ul li {
+    list-style: none; /* Explicitly remove bullets from li */
+}
+
+
 header nav ul li a:hover {
     text-decoration: none; /* Ensure no underline on hover as well */
     opacity: 0.8; /* Optional: Slight opacity change for hover effect */
