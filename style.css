@@ -80,7 +80,7 @@ section {
 
 /* Alternating Section Colors */
 .hero {
-    background-color: #00ff00;
+    background-color: #ff0000;
 }
 
 .usp {
@@ -138,7 +138,7 @@ footer {
 
 footer nav ul {
     list-style: none; /* Remove bullets from the footer's ul */
-    padding: 0; /* Remove default padding */
+    padding: 20; /* Remove default padding */
     margin: 0; /* Remove default margin */
     display: flex; /* Align items horizontally */
     justify-content: center; /* Center align footer links */
