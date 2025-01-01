@@ -80,7 +80,8 @@ section {
 
 /* Alternating Section Colors */
 .hero {
-    background-color: #00ff00;
+    background-color: #ff0000;
+    justify-content: center; /* Center align content */
 }
 
 .usp {
