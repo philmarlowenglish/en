@@ -103,91 +103,14 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin-bottom: 25px; /* Increased margin after h2 for clearer separation */
+    margin-bottom: 15px; /* Margin after h2 */
 }
 
 h3 {
     font-size: 1.5rem;
-    margin-bottom: 20px; /* Increased margin after h3 for clearer separation */
+    margin-bottom: 15px; /* Margin after h3 */
 }
 
-/* Social Media Icons */
-.social-icons, .footer-social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.social-icons img, .footer-social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #003366; /* Dark Blue Background */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-footer nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-footer nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-footer nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Images */
-.main-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    /* Header */
-    header .site-name h1 {
-        font-size: 1.4rem; /* Smaller font size for mobile */
-    }
-
-    header nav ul {
-        flex-direction: column; /* Stack nav items on mobile */
-    }
-
-    header nav ul li {
-        margin-bottom: 10px; /* Space between nav items */
-    }
-
-    /* Section Padding */
-    section {
-        padding: 40px 15px; /* Less padding on mobile */
-    }
-
-    /* Main Heading Sizes for Mobile */
-    h1 {
-        font-size: 2rem; /* Smaller heading size for mobile */
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-}
+/* Padding between content and next sub-heading */
+h2 + p, h3 + p {
+    margin-bottom: 25px; /* Added space between content and 
