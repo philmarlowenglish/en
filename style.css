@@ -134,7 +134,7 @@ h2 + p, h3 + p {
 /* Social Media Icons */
 .social-icons, .footer-social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 10px;
     margin-top: 20px;
 }
