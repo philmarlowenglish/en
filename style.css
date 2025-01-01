@@ -1,32 +1,147 @@
-/* General Section Styling */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Import Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+
+header .site-name h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
 section {
-    padding: 60px 20px; /* Increased padding for top and bottom */
-    margin-bottom: 40px; /* Adds a gap between sections */
+    padding: 60px 20px;
+    margin-bottom: 40px;
 }
 
-/* Hero Section */
+/* Alternating Section Colors */
 .hero {
-    background-color: #ffffff; /* White */
-    text-align: center; /* Center content in the hero section */
+    background-color: #ffffff;
 }
 
-/* USP Section */
 .usp {
-    background-color: #f9f9f9; /* Light grey */
-    padding: 60px 20px; /* Same padding for consistency */
-    text-align: left; /* Left-align content */
+    background-color: #f9f9f9;
 }
 
-/* Services Section */
 .services {
-    background-color: #ffffff; /* White */
-    padding: 60px 20px;
-    text-align: left;
+    background-color: #ffffff;
 }
 
-/* Contact Section */
 .contact {
-    background-color: #f9f9f9; /* Light grey */
-    padding: 60px 20px;
-    text-align: left;
+    background-color: #f9f9f9;
+}
+
+/* Main Heading and Subheadings */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.social-icons, .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons img, .footer-social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
