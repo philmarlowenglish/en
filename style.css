@@ -46,15 +46,27 @@ header .logo img {
     height: auto;
 }
 
+/* Adjust the site name to allow space for the language links */
+header .site-name {
+    flex-grow: 1; /* Allow the site name to take up available space */
+    text-align: left; /* Align the site name to the left */
+}
+
 header .site-name h1 {
     font-size: 1.8rem;
     font-weight: 500;
+    margin: 0; /* Remove margin to avoid unnecessary spacing */
+}
+
+header nav {
+    text-align: right; /* Align the navigation to the right */
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    margin: 0;
 }
 
 header nav ul li a {
