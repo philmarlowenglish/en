@@ -38,6 +38,7 @@ header .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    border-left: none; /* Remove any left border */
 }
 
 header .logo img {
@@ -73,6 +74,7 @@ section {
     margin-bottom: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    border-left: none; /* Remove any left border */
 }
 
 /* Alternating Section Colors */
