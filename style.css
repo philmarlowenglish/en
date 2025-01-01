@@ -43,18 +43,20 @@ header .logo img {
     width: 50px;
     height: auto;
     vertical-align: middle;
+    width: 10%;
 }
 
 header .site-name h1 {
     font-size: 1.8rem;
     font-weight: 500;
     vertical-align: middle;
-    width: 50%;
+    width: 70%;
 }
 
 header nav {
     text-align: right; /* Align the navigation to the right */
     vertical-align: middle;
+    width: 20%;
 }
 
 header nav ul {
