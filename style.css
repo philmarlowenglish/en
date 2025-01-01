@@ -80,7 +80,7 @@ section {
 
 /* Alternating Section Colors */
 .hero {
-    background-color: #00ff00;
+    background-color: #ff0000;
 }
 
 .usp {
@@ -154,6 +154,11 @@ footer nav ul li a {
     text-decoration: none; /* No underline */
     font-weight: 500; /* Consistent font weight */
     font-size: 1rem; /* Set readable font size */
+}
+
+footer nav ul li a:hover {
+    text-decoration: none; /* Ensure no underline on hover as well */
+    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
 }
 
 
