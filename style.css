@@ -73,11 +73,9 @@ header nav ul li a:hover {
 
 /* Section Styling */
 section {
-    padding: 60px 20px;
-    margin-bottom: 40px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
     max-width: 1200px;
-    margin: 0 auto;
-    border-left: none; /* Remove any left border */
 }
 
 /* Alternating Section Colors */
@@ -109,17 +107,17 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin-bottom: 0px; /* Margin after h2 */
+    margin-top: 20px; /* Margin after h2 */
 }
 
 h3 {
     font-size: 1.5rem;
-    margin-bottom: 0px; /* Margin after h3 */
+    margin-top: 20px; /* Margin after h3 */
 }
 
 /* Padding between content and next sub-heading */
 h2 + p, h3 + p {
-    margin-bottom: 25px; /* Added space between content and next sub-heading */
+    margin-bottom: 20px; /* Added space between content and next sub-heading */
 }
 
 /* Social Media Icons */
@@ -148,7 +146,7 @@ footer nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 footer nav ul li a {
@@ -186,7 +184,7 @@ footer nav ul li a:hover {
 
     /* Section Padding */
     section {
-        padding: 40px 15px; /* Less padding on mobile */
+        padding: 20px 15px; /* Less padding on mobile */
     }
 
     /* Main Heading Sizes for Mobile */
