@@ -48,6 +48,11 @@ header nav ul li a {
     text-decoration: none; /* Remove the underline */
     font-weight: 500; /* Ensure consistent font weight */
     font-size: 1rem; /* Set a readable font size */
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margin */
+    display: flex; /* Align items horizontally */
+    gap: 15px; /* Space between items */
 }
 
 header nav ul li a:hover {
