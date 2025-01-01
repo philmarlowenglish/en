@@ -136,6 +136,27 @@ footer {
     text-align: center;
 }
 
+footer nav ul {
+    list-style: none; /* Remove bullets from the footer's ul */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center align footer links */
+    gap: 15px; /* Space between footer links */
+}
+
+footer nav ul li {
+    list-style: none; /* Explicitly remove bullets from footer li */
+}
+
+footer nav ul li a {
+    color: #fff; /* Make the text white */
+    text-decoration: none; /* No underline */
+    font-weight: 500; /* Consistent font weight */
+    font-size: 1rem; /* Set readable font size */
+}
+
+
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
     /* Remove margins and make container full-width */
