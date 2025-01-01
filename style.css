@@ -31,7 +31,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #000033; /* Dark Blue Background */
+    background-color: #000022; /* Dark Blue Background */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -62,7 +62,7 @@ section {
 }
 
 .usp {
-    background-color: #f7f7f7; /* Light grey */
+    background-color: #dddddd; /* Light grey */
 }
 
 .services {
@@ -70,7 +70,7 @@ section {
 }
 
 .contact {
-    background-color: #f7f7f7;
+    background-color: #dddddd;
 }
 
 /* Main Heading and Subheadings */
@@ -108,7 +108,7 @@ h3 {
 
 /* Footer Styling */
 footer {
-    background-color: #000033; /* Dark Blue Background */
+    background-color: #000022; /* Dark Blue Background */
     color: #fff;
     padding: 20px;
     text-align: center;
