@@ -43,12 +43,16 @@ header .container {
     align-items: center;
 }
 
-header nav ul {
-    list-style: none; /* Remove bullet points */
-    display: flex;
-    gap: 15px; /* Add spacing between items */
-    margin: 0; /* Ensure no extra margin */
-    padding: 0; /* Ensure no extra padding */
+header nav ul li a {
+    color: #fff; /* Make the text white */
+    text-decoration: none; /* Remove the underline */
+    font-weight: 500; /* Ensure consistent font weight */
+    font-size: 1rem; /* Set a readable font size */
+}
+
+header nav ul li a:hover {
+    text-decoration: none; /* Ensure no underline on hover as well */
+    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
 }
 
 /* Section Styling */
