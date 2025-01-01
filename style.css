@@ -80,7 +80,7 @@ section {
 
 /* Alternating Section Colors */
 .hero {
-    background-color: #ff0000;
+    background-color: #ffffff;
     text-align: center; /* Horizontally center text */
     display: flex; /* Use flexbox for vertical centering */
     flex-direction: column; /* Stack items vertically */
@@ -93,11 +93,11 @@ section {
 }
 
 .services {
-    background-color: #dddddd;
+    background-color: #ffffff;
 }
 
 .image {
-    background-color: #ff0000;
+    background-color: #ffffff;
 }
 
 .contact {
