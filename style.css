@@ -25,7 +25,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #191970; /* Midnight Blue Background */
+    background-color: #000033; /* Dark Blue Background */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -134,7 +134,7 @@ h2 + p, h3 + p {
 
 /* Footer Styling */
 footer {
-    background-color: #191970; /* Midnight Blue Background */
+    background-color: #000033; /* Dark Blue Background */
     color: #fff;
     padding: 20px;
     text-align: center;
