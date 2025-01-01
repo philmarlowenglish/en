@@ -80,7 +80,7 @@ section {
 
 /* Alternating Section Colors */
 .hero {
-    background-color: #ff0000;
+    background-color: #00ff00;
 }
 
 .usp {
@@ -118,7 +118,7 @@ h3 {
 /* Social Media Icons */
 .social-icons, .footer-social-icons {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     gap: 10px;
     margin-top: 20px;
 }
