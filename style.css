@@ -1,61 +1,32 @@
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-/* Section styling */
+/* General Section Styling */
 section {
-    padding: 40px 20px;
+    padding: 60px 20px; /* Increased padding for top and bottom */
+    margin-bottom: 40px; /* Adds a gap between sections */
 }
 
+/* Hero Section */
 .hero {
-    text-align: center;
-    background-color: #ffffff;
+    background-color: #ffffff; /* White */
+    text-align: center; /* Center content in the hero section */
 }
 
+/* USP Section */
 .usp {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light grey */
+    padding: 60px 20px; /* Same padding for consistency */
+    text-align: left; /* Left-align content */
 }
 
+/* Services Section */
 .services {
-    background-color: #ffffff;
+    background-color: #ffffff; /* White */
+    padding: 60px 20px;
+    text-align: left;
 }
 
+/* Contact Section */
 .contact {
-    background-color: #f9f9f9;
-}
-
-/* Headings */
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-/* Images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Social icons */
-.social-icons img,
-.footer-social-icons img {
-    margin: 0 5px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    color: #fff;
+    background-color: #f9f9f9; /* Light grey */
+    padding: 60px 20px;
+    text-align: left;
 }
