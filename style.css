@@ -30,13 +30,22 @@ header {
     text-align: center;
 }
 
+/* Desktop Styles (default) */
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 20px; /* Add margin for desktop */
     padding: 0 20px;
+}
+
+/* Mobile Styles (override desktop margins) */
+@media screen and (max-width: 768px) {
+    header .container {
+        margin: 0; /* Remove margin for mobile */
+        padding: 0 15px; /* Optional: reduce padding */
+    }
 }
 
 header .logo {
