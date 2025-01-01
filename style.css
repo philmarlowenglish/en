@@ -80,8 +80,12 @@ section {
 
 /* Alternating Section Colors */
 .hero {
-    background-color: #ff0000;
-    justify-content: center; /* Center align content */
+    background-color: #ffff00;
+    text-align: center; /* Horizontally center text */
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Horizontally center items */
 }
 
 .usp {
