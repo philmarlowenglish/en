@@ -149,31 +149,31 @@ section {
 .hero {
     background-color: #ffffff;
     text-align: center;
-    padding: 20px 20px; /* Slightly larger padding for the hero section */
+    padding: 0px 0px; /* Slightly larger padding for the hero section */
 }
 
 /* USP Section */
 .usp {
     background-color: #eeeeee;
-    padding: 20px 20px;
+    padding: 0px 0px;
 }
 
 /* Services Section */
 .services {
     background-color: #ffffff;
-    padding: 20px 20px;
+    padding: 0px 0px;
 }
 
 /* Image Section */
 .image {
     background-color: #ffffff;
-    padding: 20px 20px;
+    padding: 0px 0px;
 }
 
 /* Contact Section */
 .contact {
     background-color: #eeeeee;
-    padding: 20px 20px;
+    padding: 0px 0px;
 }
 
 /* Service Items */
@@ -256,7 +256,7 @@ footer nav ul li a:hover {
     }
 
     section {
-        padding: 20px 20px; /* Reduced padding for mobile */
+        padding: 0px 0px; /* Reduced padding for mobile */
     }
 
     h1 {
