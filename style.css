@@ -24,7 +24,7 @@ body {
 
 /* Layout Container Styling */
 .container {
-    max-width: 60%; /* Limit container width to 60% of the viewport */
+    max-width: 1200px; /* Limit container width to 1200px */
     margin: 0 auto; /* Center the container */
     padding: 0 20px; /* Add padding for content inside the container */
     display: flex;
@@ -46,10 +46,105 @@ header .container {
     align-items: center;
 }
 
+header nav ul {
+    list-style: none; /* Remove bullets from the ul */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Ensure items are aligned horizontally */
+    gap: 15px; /* Space between items */
+}
+
+header nav ul li {
+    list-style: none; /* Explicitly remove bullets from li */
+}
+
 header nav ul li a {
     color: #fff; /* Make the text white */
     text-decoration: none; /* Remove the underline */
     font-weight: 500; /* Ensure consistent font weight */
     font-size: 1rem; /* Set a readable font size */
-    list-style: none; /* Remove bullets */
-    padding: 0; /* R
+    display: flex; /* Align items horizontally */
+    gap: 15px; /* Space between items */
+}
+
+header nav ul li a:hover {
+    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
+}
+
+/* Mobile Hamburger Menu */
+#hamburger-menu {
+    display: none; /* Hidden by default */
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hide Navigation on Mobile by Default */
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-menu.hidden {
+    display: none; /* Hide on default (mobile) */
+}
+
+/* Active State for the Menu */
+#nav-menu.active {
+    display: flex; /* Show on mobile when active */
+    flex-direction: column;
+    align-items: center;
+    background-color: #000022;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.usp, .contact {
+    background-color: #eeeeee; /* Light grey */
+}
+
+.services, .image {
+    background-color: #ffffff;
+}
+
+/* Main Heading and Subheadings */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Social Media Icons */
+.social-icons, .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap
