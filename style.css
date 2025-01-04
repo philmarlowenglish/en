@@ -28,11 +28,13 @@
 
 /* Show Hamburger on All Screens */
 #hamburger-menu {
-    display: block;
+    display: none;
     background: transparent;
     border: none;
     font-size: 30px;
     color: #fff;
+    cursor: pointer;
+    z-index: 1000;
 }
 
 /* Show Navigation Links Horizontally */
@@ -72,6 +74,7 @@
         display: flex;
     }
 
+    /* Change the navigation list to be vertical on mobile */
     #nav-menu ul {
         flex-direction: column;
         gap: 10px;
@@ -80,11 +83,21 @@
     #nav-menu ul li {
         margin-bottom: 10px;
     }
+
+    /* Show Hamburger on Mobile */
+    #hamburger-menu {
+        display: block;
+    }
 }
 
 /* Desktop Styles */
 @media screen and (min-width: 769px) {
-    /* Hamburger menu still shown on desktop, but allows horizontal nav */
+    /* Hamburger menu hidden on desktop */
+    #hamburger-menu {
+        display: none;
+    }
+
+    /* Regular Navigation Menu for Desktop */
     #nav-menu {
         display: flex;
         flex-direction: row;
