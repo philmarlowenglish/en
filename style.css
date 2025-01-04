@@ -147,4 +147,92 @@ h3 {
 .social-icons, .footer-social-icons {
     display: flex;
     justify-content: center;
-    gap
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons img, .footer-social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000022;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer nav ul li a:hover {
+    opacity: 0.8;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    /* Adjust container padding for mobile */
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 15px; 
+    }
+
+    /* Header Styling on Mobile */
+    header .site-name h1 {
+        font-size: 1.4rem; /* Smaller font size for mobile */
+    }
+
+    /* Navigation on Mobile */
+    header nav ul {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #hamburger-menu {
+        display: block; /* Show hamburger menu on mobile */
+    }
+
+    #nav-menu.active {
+        display: flex; /* Show menu on mobile */
+    }
+
+    /* Main Heading Sizes for Mobile */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Social Media Icons */
+    .social-icons img, .footer-social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
