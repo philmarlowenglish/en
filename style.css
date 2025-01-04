@@ -1,3 +1,6 @@
+/* Load Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 /* General Reset */
 * {
     margin: 0;
@@ -73,55 +76,32 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        z-index: 1000;
     }
 
-    /* Active State for the Menu (show when clicked) */
+    /* Active state for navigation when toggled */
     #nav-menu.active {
-        display: flex;
+        display: flex; /* Show the menu when active */
     }
 
-    /* Make the navigation list vertical on mobile */
+    /* Mobile menu links stacked vertically */
     #nav-menu ul {
         flex-direction: column;
         gap: 10px;
     }
 
-    /* Adjust margin for list items */
     #nav-menu ul li {
         margin-bottom: 10px;
-    }
-
-    /* Show Hamburger on Mobile */
-    #hamburger-menu {
-        display: block;
-    }
-
-    /* Adjust logo and text position on mobile */
-    .logo img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .site-name h1 {
-        font-size: 1.5rem;
     }
 }
 
 /* Desktop Styles */
 @media screen and (min-width: 769px) {
-    /* Hide Hamburger Menu on Desktop */
-    #hamburger-menu {
-        display: none;
-    }
-
-    /* Regular Navigation Menu for Desktop */
+    /* Hamburger menu still shown on desktop, but allows horizontal nav */
     #nav-menu {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 100%; /* Ensure the nav spans full width */
     }
 
     #nav-menu ul {
@@ -130,4 +110,11 @@
     }
 
     #nav-menu ul li a {
-        p
+        padding: 10px;
+    }
+
+    /* Show Hamburger on Desktop for demonstration (optional) */
+    #hamburger-menu {
+        display: block;
+    }
+}
