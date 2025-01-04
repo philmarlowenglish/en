@@ -56,7 +56,13 @@
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-    /* Change nav menu to be vertical and hidden by default */
+    /* Container adjustments for mobile view */
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    /* Hide the regular navigation on mobile by default */
     #nav-menu {
         display: none; /* Hide menu on mobile */
         position: absolute;
@@ -67,19 +73,21 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        z-index: 1000;
     }
 
-    /* Active State for the Menu */
+    /* Active State for the Menu (show when clicked) */
     #nav-menu.active {
         display: flex;
     }
 
-    /* Change the navigation list to be vertical on mobile */
+    /* Make the navigation list vertical on mobile */
     #nav-menu ul {
         flex-direction: column;
         gap: 10px;
     }
 
+    /* Adjust margin for list items */
     #nav-menu ul li {
         margin-bottom: 10px;
     }
@@ -88,11 +96,21 @@
     #hamburger-menu {
         display: block;
     }
+
+    /* Adjust logo and text position on mobile */
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .site-name h1 {
+        font-size: 1.5rem;
+    }
 }
 
 /* Desktop Styles */
 @media screen and (min-width: 769px) {
-    /* Hamburger menu hidden on desktop */
+    /* Hide Hamburger Menu on Desktop */
     #hamburger-menu {
         display: none;
     }
@@ -103,6 +121,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        width: 100%; /* Ensure the nav spans full width */
     }
 
     #nav-menu ul {
@@ -111,6 +130,4 @@
     }
 
     #nav-menu ul li a {
-        padding: 10px;
-    }
-}
+        p
