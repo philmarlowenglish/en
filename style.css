@@ -14,6 +14,90 @@
     font-style: normal;
 }
 
+/* Header Styling */
+header {
+    background-color: #000022;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Ensure proper placement */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.site-name h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Hamburger Menu Button */
+#hamburger-menu {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Hidden by default on desktop */
+}
+
+/* Navigation Menu Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design: Show Hamburger Menu on Mobile */
+@media screen and (max-width: 768px) {
+    #hamburger-menu {
+        display: block;
+    }
+
+    nav#nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #000022;
+        padding: 10px 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav#nav-menu.active {
+        display: flex;
+    }
+}
+
 /* Body Styling */
 body {
     font-family: 'Montserrat', sans-serif;
