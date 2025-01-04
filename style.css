@@ -6,290 +6,98 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Load Montserrat Font from Root Directory */
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-/* Body Styling */
-body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #ffffff; /* Light background for contrast */
-}
-
 /* Layout Container Styling */
 .container {
-    max-width: 60%; /* Limit container width to 60% of the viewport */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add padding for content inside the container */
-}
-
-/* Header Styling */
-header {
-    background-color: #000022; /* Dark Blue Background */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header .container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav ul li a {
-    color: #fff; /* Make the text white */
-    text-decoration: none; /* Remove the underline */
-    font-weight: 500; /* Ensure consistent font weight */
-    font-size: 1rem; /* Set a readable font size */
-    list-style: none; /* Remove bullets */
-    padding: 0; /* Remove extra padding */
-    margin: 0; /* Remove extra margin */
-    display: flex; /* Align items horizontally */
-    gap: 15px; /* Space between items */
-}
-
-header nav ul {
-    list-style: none; /* Remove bullets from the ul */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Ensure items are aligned horizontally */
-    gap: 15px; /* Space between items */
-}
-
-header nav ul li {
-    list-style: none; /* Explicitly remove bullets from li */
-}
-
-header nav ul li a:hover {
-    text-decoration: none; /* Ensure no underline on hover as well */
-    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
-}
-
-/* Hamburger Menu Button */
-#hamburger-menu {
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  display: none; /* Initially hidden */
-}
-
-/* Navigation Menu (Hidden by default) */
+/* Hide Navigation on Mobile by Default */
 #nav-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000022;
-  color: white;
-  text-align: center;
-  z-index: 9999;
-}
-
-#nav-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-#nav-menu li {
-  margin: 20px 0;
-}
-
-#nav-menu li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-#nav-menu hr {
-  width: 80%;
-  border: 1px solid #fff;
-  margin: 20px 0;
-}
-
-/* Show Hamburger Button and Menu on Mobile */
-@media screen and (max-width: 768px) {
-  #hamburger-menu {
-    display: block; /* Show hamburger on small screens */
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 10000;
-  }
-
-  #nav-menu.active {
-    display: block; /* Show menu when active */
-  }
-  
-  header nav ul {
-    display: none; /* Hide horizontal navigation on mobile */
-  }
-}
-
-/* Section Styling */
-section {
-    padding: 10px 10px;
-}
-
-/* Alternating Section Colors */
-.hero {
-    background-color: #ffffff;
-    text-align: center; /* Horizontally center text */
-    display: flex; /* Use flexbox for vertical centering */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Horizontally center items */
-}
-
-.usp {
-    background-color: #eeeeee; /* Light grey */
-}
-
-.services {
-    background-color: #ffffff;
-}
-
-.image {
-    background-color: #ffffff;
-}
-
-.contact {
-    background-color: #eeeeee;
-}
-
-/* Main Heading and Subheadings */
-h1, h2, h3 {
-    font-weight: 600;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-top: 20px; /* Margin after h2 */
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-top: 20px; /* Margin after h3 */
-}
-
-/* Social Media Icons */
-.social-icons, .footer-social-icons {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    flex-direction: row;
 }
 
-.social-icons img, .footer-social-icons img {
-    width: 24px;
-    height: 24px;
+#nav-menu.hidden {
+    display: none; /* Hide on default (mobile) */
 }
 
-/* Footer Styling */
-footer {
-    background-color: #000022; /* Dark Blue Background */
+/* Show Hamburger on All Screens */
+#hamburger-menu {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 30px;
     color: #fff;
-    padding: 20px;
-    text-align: center;
 }
 
-footer nav ul {
-    list-style: none; /* Remove bullets from the footer's ul */
-    padding: 20; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Align items horizontally */
-    justify-content: center; /* Center align footer links */
-    gap: 15px; /* Space between footer links */
+/* Show Navigation Links Horizontally */
+#nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
-footer nav ul li {
-    list-style: none; /* Explicitly remove bullets from footer li */
+#nav-menu ul li {
+    list-style: none;
 }
 
-footer nav ul li a {
-    color: #fff; /* Make the text white */
-    text-decoration: none; /* No underline */
-    font-weight: 500; /* Consistent font weight */
-    font-size: 1rem; /* Set readable font size */
+#nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
 }
-
-footer nav ul li a:hover {
-    text-decoration: none; /* Ensure no underline on hover as well */
-    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
-}
-
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-    /* Remove margins and make container full-width */
-    .container {
-        max-width: 100%;
-        margin: 0;
-        padding: 0 15px; /* Adjust padding for better fit */
+    /* Change nav menu to be vertical and hidden by default */
+    #nav-menu {
+        display: none; /* Hide menu on mobile */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #000022;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* Active State for the Menu */
+    #nav-menu.active {
+        display: flex;
+    }
+
+    #nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #nav-menu ul li {
+        margin-bottom: 10px;
     }
 }
 
-/* Images */
-.main-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    /* Header */
-    header .site-name h1 {
-        font-size: 1.4rem; /* Smaller font size for mobile */
+/* Desktop Styles */
+@media screen and (min-width: 769px) {
+    /* Hamburger menu still shown on desktop, but allows horizontal nav */
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
-    header nav ul {
-        flex-direction: row; /* Align items side by side (horizontal) */
-        justify-content: flex-end; /* Align the language options to the right */
-        gap: 15px; /* Space between language options */
+    #nav-menu ul {
+        display: flex;
+        gap: 20px;
     }
 
-    header nav ul li {
-        margin-bottom: 0; /* Remove margin between items */
-    }
-
-    /* Section Padding */
-    section {
-        padding: 20px 20px; /* Less padding on mobile */
-    }
-
-    /* Main Heading Sizes for Mobile */
-    h1 {
-        font-size: 2rem; /* Smaller heading size for mobile */
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
+    #nav-menu ul li a {
+        padding: 10px;
     }
 }
