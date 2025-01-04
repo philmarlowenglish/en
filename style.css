@@ -197,7 +197,7 @@ footer nav ul li a:hover {
 @media screen and (max-width: 768px) {
     /* Header */
     header .site-name h1 {
-        font-size: 1.4rem; /* Smaller font size for mobile */
+        font-size: 1.2rem; /* Smaller font size for mobile */
     }
 
     header nav ul {
