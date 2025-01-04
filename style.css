@@ -20,7 +20,7 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    position: relative; /* Ensure proper placement */
+    position: relative;
 }
 
 header .container {
@@ -49,30 +49,34 @@ header .container {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-    display: none; /* Hidden by default on desktop */
+    display: none; /* Hidden on desktop */
+}
+
+#hamburger-menu .menu-icon {
+    display: inline;
+}
+
+#hamburger-menu .close-icon {
+    display: none;
+}
+
+#hamburger-menu.active .menu-icon {
+    display: none;
+}
+
+#hamburger-menu.active .close-icon {
+    display: inline;
 }
 
 /* Navigation Menu Styling */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+nav#nav-menu {
     display: flex;
+    list-style: none;
     gap: 15px;
 }
 
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-nav ul li a:hover {
-    opacity: 0.8;
+nav#nav-menu.hidden {
+    display: none;
 }
 
 /* Responsive Design: Show Hamburger Menu on Mobile */
@@ -87,6 +91,28 @@ nav ul li a:hover {
         gap: 10px;
         background-color: #000022;
         padding: 10px 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav#nav-menu.active {
+        display: flex;
+    }
+}
+
+/* Mobile Menu Styling */
+@media screen and (max-width: 768px) {
+    #hamburger-menu {
+        display: block;
+    }
+
+     nav#nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #000022;
+        padding: 20px;
         position: absolute;
         top: 60px;
         right: 0;
