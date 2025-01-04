@@ -24,10 +24,9 @@ body {
 
 /* Layout Container Styling */
 .container {
-    width: 100%; /* Full width container */
-    margin: 0 auto;
+    max-width: 60%; /* Limit container width for desktop */
+    margin: 0 auto; /* Center the container */
     padding: 0 20px;
-    display: block; /* Ensure container is not using flex */
 }
 
 /* Header Styling */
@@ -46,9 +45,8 @@ header .container {
 
 /* Section Styling */
 section {
-    display: block; /* Ensure section is a block element to stack child items */
-    margin-bottom: 40px; /* Spacing between sections */
-    padding: 10px 20px;
+    margin-bottom: 40px; /* Add spacing between sections */
+    padding: 20px 0;
 }
 
 /* Hero Section */
@@ -59,31 +57,36 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px 20px;
 }
 
 /* USP Section */
 .usp {
     background-color: #eeeeee;
+    padding: 40px 20px;
 }
 
 /* Services Section */
 .services {
     background-color: #ffffff;
+    padding: 40px 20px;
 }
 
 /* Image Section */
 .image {
     background-color: #ffffff;
+    padding: 20px 20px;
 }
 
 /* Contact Section */
 .contact {
     background-color: #eeeeee;
+    padding: 40px 20px;
 }
 
 /* Service Items */
 .service-item {
-    margin-bottom: 20px; /* Add space between service items */
+    margin-bottom: 20px;
 }
 
 /* Social Media Icons */
@@ -134,27 +137,31 @@ footer nav ul li a:hover {
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
+    /* Full-width container on mobile */
     .container {
         max-width: 100%;
         margin: 0;
         padding: 0 15px;
     }
-    
-    /* Header */
+
+    /* Adjust header font size for mobile */
     header .site-name h1 {
         font-size: 1.4rem;
     }
-    
+
+    /* Mobile navigation menu */
     header nav ul {
         flex-direction: row;
         justify-content: flex-end;
         gap: 15px;
     }
-    
+
+    /* Mobile section padding */
     section {
         padding: 20px 20px;
     }
-    
+
+    /* Mobile heading sizes */
     h1 {
         font-size: 2rem;
     }
