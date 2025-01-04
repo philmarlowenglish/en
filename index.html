@@ -18,31 +18,10 @@
             <div class="site-name">
                 <h1>Phil Marlow English</h1>
             </div>
-
-            <!-- Hamburger Menu Button -->
-            <button id="hamburger-menu" aria-label="Toggle Navigation">
-                <span class="menu-icon">☰</span>
-                <span class="close-icon hidden">✖</span>
-            </button>
-
-            <!-- Navigation Menu -->
-            <nav id="nav-menu" class="hidden">
+            <nav>
                 <ul>
-                    <!-- Language Links -->
                     <li><a href="index.html" aria-label="English">EN</a></li>
                     <li><a href="de/index.html" aria-label="German">DE</a></li>
-
-                    <!-- Divider -->
-                    <hr>
-
-                    <!-- Other Links -->
-                    <li><a href="index.html" aria-label="Home">Home</a></li>
-                    <li><a href="#about" aria-label="About">About</a></li>
-                    <li><a href="#services" aria-label="Services">Services</a></li>
-                    <li><a href="#contact" aria-label="Contact">Contact</a></li>
-                    
-                    <!-- Blog -->
-                    <li><a href="#blog" aria-label="Blog">Blog</a></li>
                 </ul>
             </nav>
         </div>
@@ -102,6 +81,7 @@
                     <h3>Group sessions (online)</h3>
                     <p>Bring your team together through <b>communication-based</b>, <b>interactive</b> training. Create a safe space which increases <b>cross-team communication</b> and <b>knowledge sharing</b> within your organization, as well as <b>team building</b>.</p>
                 </div>
+
             </div>
         </section>
 
@@ -146,18 +126,5 @@
             </div>
         </div>
     </footer>
-
-        <!-- JavaScript for Hamburger Menu -->
-    <script>
-        // Get Hamburger Button and Menu
-        const hamburgerMenu = document.getElementById('hamburger-menu');
-        const navMenu = document.getElementById('nav-menu');
-
-        // Toggle Menu on Click
-        hamburgerMenu.addEventListener('click', function () {
-            navMenu.classList.toggle('active');
-            hamburgerMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>
