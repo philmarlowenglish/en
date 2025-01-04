@@ -6,35 +6,25 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Load Montserrat Font from Root Directory */
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-}
-
 /* Body Styling */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #ffffff; /* Light background for contrast */
+    background-color: #ffffff;
 }
 
 /* Layout Container Styling */
 .container {
-    max-width: 1200px; /* Limit container width to 1200px */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add padding for content inside the container */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%; /* Full width container */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: block; /* Ensure container is not using flex */
 }
 
 /* Header Styling */
 header {
-    background-color: #000022; /* Dark Blue Background */
+    background-color: #000022;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -46,126 +36,46 @@ header .container {
     align-items: center;
 }
 
-header nav ul {
-    list-style: none; /* Remove bullets from the ul */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Ensure items are aligned horizontally */
-    gap: 15px; /* Space between items */
-}
-
-header nav ul li {
-    list-style: none; /* Explicitly remove bullets from li */
-}
-
-header nav ul li a {
-    color: #fff; /* Make the text white */
-    text-decoration: none; /* Remove the underline */
-    font-weight: 500; /* Ensure consistent font weight */
-    font-size: 1rem; /* Set a readable font size */
-    display: flex; /* Align items horizontally */
-    gap: 15px; /* Space between items */
-}
-
-header nav ul li a:hover {
-    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
-}
-
-/* Mobile Hamburger Menu */
-#hamburger-menu {
-    display: none; /* Hidden by default */
-    background: transparent;
-    border: none;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* Hide Navigation on Mobile by Default */
-#nav-menu {
-    display: flex;
-    flex-direction: row;
-}
-
-#nav-menu.hidden {
-    display: none; /* Hide on default (mobile) */
-}
-
-/* Active State for the Menu */
-#nav-menu.active {
-    display: flex; /* Show on mobile when active */
-    flex-direction: column;
-    align-items: center;
-    background-color: #000022;
-    padding: 20px;
-    width: 100%;
-}
-
 /* Section Styling */
 section {
-    padding: 20px;
-    display: block; /* Ensure sections are block-level */
+    display: block; /* Ensure section is a block element to stack child items */
+    margin-bottom: 40px; /* Spacing between sections */
+    padding: 10px 20px;
 }
 
-/* Hero Section - Stacking Content Vertically */
+/* Hero Section */
 .hero {
     background-color: #ffffff;
     text-align: center;
-    display: flex; /* Flexbox for centering */
-    flex-direction: column; /* Stack elements vertically */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full screen height for hero section */
 }
 
 /* USP Section */
 .usp {
-    background-color: #eeeeee; /* Light grey */
-    display: block; /* Ensure it's block-level */
-    text-align: center; /* Center the text horizontally */
+    background-color: #eeeeee;
 }
 
 /* Services Section */
 .services {
     background-color: #ffffff;
-    display: block; /* Ensure block-level display */
-    text-align: center; /* Center text horizontally */
+}
+
+/* Image Section */
+.image {
+    background-color: #ffffff;
 }
 
 /* Contact Section */
 .contact {
-    background-color: #eeeeee; /* Light grey */
-    display: block; /* Ensure block-level display */
-    text-align: center; /* Center the text horizontally */
+    background-color: #eeeeee;
 }
 
-/* Main Heading and Subheadings */
-h1, h2, h3 {
-    font-weight: 600;
-    display: block; /* Ensure they are block-level */
-    margin-bottom: 20px; /* Space below each heading */
-}
-
-/* Specific Styles for h1, h2, h3 */
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-top: 20px; /* Margin after h2 */
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-top: 20px; /* Margin after h3 */
-}
-
-/* Paragraphs and Text */
-p {
-    display: block; /* Ensure paragraphs are block-level */
-    margin-bottom: 15px; /* Space between paragraphs */
-    text-align: center; /* Center text for readability */
+/* Service Items */
+.service-item {
+    margin-bottom: 20px; /* Add space between service items */
 }
 
 /* Social Media Icons */
@@ -210,54 +120,40 @@ footer nav ul li a {
 }
 
 footer nav ul li a:hover {
+    text-decoration: none;
     opacity: 0.8;
 }
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-    /* Adjust container padding for mobile */
     .container {
         max-width: 100%;
         margin: 0;
-        padding: 0 15px; 
+        padding: 0 15px;
     }
-
-    /* Header Styling on Mobile */
+    
+    /* Header */
     header .site-name h1 {
-        font-size: 1.4rem; /* Smaller font size for mobile */
+        font-size: 1.4rem;
     }
-
-    /* Navigation on Mobile */
+    
     header nav ul {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: flex-end;
         gap: 15px;
     }
-
-    #hamburger-menu {
-        display: block; /* Show hamburger menu on mobile */
+    
+    section {
+        padding: 20px 20px;
     }
-
-    #nav-menu.active {
-        display: flex; /* Show menu on mobile */
-    }
-
-    /* Main Heading Sizes for Mobile */
+    
     h1 {
         font-size: 2rem;
     }
-
     h2 {
         font-size: 1.6rem;
     }
-
     h3 {
         font-size: 1.3rem;
-    }
-
-    /* Social Media Icons */
-    .social-icons img, .footer-social-icons img {
-        width: 30px;
-        height: 30px;
     }
 }
