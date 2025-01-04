@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freelancer website - services and contact information">
+    <title>Phil Marlow English</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="pmelogo.jpg" alt="Phil Marlow English logo" width="50" height="50">
+            </div>
+            <div class="site-name">
+                <h1>Phil Marlow English</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="English">EN</a></li>
+                    <li><a href="de.html" aria-label="German">DE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="main-image">
+                    <img src="phil.png" alt="Photo of Phil Marlow">
+                </div>
+                <h2>Phil Marlow</h2>
+                <p>English language consulting and training</p>
+
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/marlow.phil/" target="_blank" rel="noopener noreferrer">
+                        <img src="instagram-icon.png" alt="Instagram" width="24" height="24">
+                    </a>
+                    <a href="https://www.linkedin.com/in/philmarlowenglish/" target="_blank" rel="noopener noreferrer">
+                        <img src="linkedin-icon.png" alt="LinkedIn" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- USP Section -->
+        <section class="usp">
+            <div class="container">
+                <h2>Impressum</h2>
+                <div class="service-item">
+                    <h3>Mentor</h3>
+                    <p>Let me be your guide on your language journey, helping you to develop your communication skills in English.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Coach</h3>
+                    <p>An important part of my role is to listen carefully and ask questions. Our conversations about you and your life will be reflective and relevant.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Human</h3>
+                    <p>With patience and empathy, I can understand how to build your confidence and help you to find your motivation to develop your skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <h2>Training in English</h2>
+                <div class="service-item">
+                    <h3>1:1 sessions (online)</h3>
+                    <p>Through our conversations, we'll develop <b>your own personal brand of English</b> and build your <b>self-confidence</b>, allowing you to communicate in everyday situations in English.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Group sessions (online)</h3>
+                    <p>Bring your team together through <b>communication-based</b>, <b>interactive</b> training. Create a safe space which increases <b>cross-team communication</b> and <b>knowledge sharing</b> within your organization, as well as <b>team building</b>.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image">
+            <div class="container">
+                <div class="main-image">
+                    <img src="video-call.png" alt="AI generated image of four people in a video call">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="container">
+                <h2>Contact/Pricing</h2>
+                <p>Are you or your company looking for an <b>EU-based trainer</b> who offers <b>customized courses in Business English</b>?</p>
+                <p>Contact me to discuss what you need and how I can help. All prices are negotiable.</p>
+                <p>Email me at: <a href="mailto:philmarlowenglish@gmail.com">philmarlowenglish@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <nav>
+                <p>&copy; 2024 Phil Marlow English</p>
+                <ul>
+                    <li><a href="impressum.html">Imprint</a></li>
+                    <li><a href="privacy-policy.html">Data Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <!-- Social Media Icons -->
+            <div class="footer-social-icons">
+                <a href="https://www.instagram.com/marlow.phil/" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram-icon.png" alt="Instagram" width="24" height="24">
+                </a>
+                <a href="https://www.linkedin.com/in/philmarlowenglish/" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin-icon.png" alt="LinkedIn" width="24" height="24">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
