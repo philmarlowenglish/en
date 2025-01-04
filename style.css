@@ -67,10 +67,80 @@ header nav ul li {
     list-style: none; /* Explicitly remove bullets from li */
 }
 
-
 header nav ul li a:hover {
     text-decoration: none; /* Ensure no underline on hover as well */
     opacity: 0.8; /* Optional: Slight opacity change for hover effect */
+}
+
+/* Hamburger Menu Button */
+#hamburger-menu {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+/* Navigation Menu (Hidden by default) */
+#nav-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000022;
+  color: white;
+  text-align: center;
+  z-index: 9999;
+}
+
+#nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#nav-menu li {
+  margin: 20px 0;
+}
+
+#nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#nav-menu hr {
+  width: 80%;
+  border: 1px solid #fff;
+  margin: 20px 0;
+}
+
+/* Show Hamburger Button and Menu on Mobile */
+@media screen and (max-width: 768px) {
+  #hamburger-menu {
+    display: block; /* Show hamburger on small screens */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+  }
+
+  #nav-menu.active {
+    display: block; /* Show menu when active */
+  }
+  
+  header nav ul {
+    display: none; /* Hide horizontal navigation on mobile */
+  }
 }
 
 /* Section Styling */
