@@ -14,196 +14,121 @@
     font-style: normal;
 }
 
+/* Body Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff; /* Light background for contrast */
+}
+
+/* Layout Container Styling */
+.container {
+    max-width: 60%; /* Limit container width to 60% of the viewport */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding for content inside the container */
+}
+
 /* Header Styling */
 header {
-    background-color: #000022;
+    background-color: #000022; /* Dark Blue Background */
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    position: relative;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
-.logo img {
-    width: 50px;
-    height: 50px;
+header nav ul li a {
+    color: #fff; /* Make the text white */
+    text-decoration: none; /* Remove the underline */
+    font-weight: 500; /* Ensure consistent font weight */
+    font-size: 1rem; /* Set a readable font size */
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margin */
+    display: flex; /* Align items horizontally */
+    gap: 15px; /* Space between items */
 }
 
-.site-name h1 {
-    font-size: 2rem;
-    margin: 0;
+header nav ul {
+    list-style: none; /* Remove bullets from the ul */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Ensure items are aligned horizontally */
+    gap: 15px; /* Space between items */
 }
 
-/* Hamburger Menu Button */
-#hamburger-menu {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none; /* Hidden on desktop */
+header nav ul li {
+    list-style: none; /* Explicitly remove bullets from li */
 }
 
-#hamburger-menu .menu-icon {
-    display: inline;
-}
 
-#hamburger-menu .close-icon {
-    display: none;
-}
-
-#hamburger-menu.active .menu-icon {
-    display: none;
-}
-
-#hamburger-menu.active .close-icon {
-    display: inline;
-}
-
-/* Navigation Menu Styling */
-nav#nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-}
-
-nav#nav-menu.hidden {
-    display: none;
-}
-
-/* Responsive Design: Show Hamburger Menu on Mobile */
-@media screen and (max-width: 768px) {
-    #hamburger-menu {
-        display: block;
-    }
-
-    nav#nav-menu {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #000022;
-        padding: 10px 20px;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-    }
-
-    nav#nav-menu.active {
-        display: flex;
-    }
-}
-
-/* Mobile Menu Styling */
-@media screen and (max-width: 768px) {
-    #hamburger-menu {
-        display: block;
-    }
-
-     nav#nav-menu {
-        display: none;
-        flex-direction: column;
-        background-color: #000022;
-        padding: 20px;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-    }
-
-    nav#nav-menu.active {
-        display: flex;
-    }
-}
-
-/* Body Styling */
-body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
-}
-
-/* Layout Container Styling */
-.container {
-    max-width: 60%;
-    margin: 0 auto;
-    padding: 0 20px;
+header nav ul li a:hover {
+    text-decoration: none; /* Ensure no underline on hover as well */
+    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
 }
 
 /* Section Styling */
 section {
-    margin-bottom: 20px; /* Increased spacing between sections */
-    padding: 0px 0px; /* Uniform padding inside each section */
+    padding: 10px 10px;
 }
 
-/* Hero Section */
+/* Alternating Section Colors */
 .hero {
     background-color: #ffffff;
-    text-align: center;
-    padding: 0px 0px; /* Slightly larger padding for the hero section */
+    text-align: center; /* Horizontally center text */
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Horizontally center items */
 }
 
-/* USP Section */
 .usp {
-    background-color: #eeeeee;
-    padding: 0px 0px;
+    background-color: #eeeeee; /* Light grey */
 }
 
-/* Services Section */
 .services {
     background-color: #ffffff;
-    padding: 0px 0px;
 }
 
-/* Image Section */
 .image {
     background-color: #ffffff;
-    padding: 0px 0px;
 }
 
-/* Contact Section */
 .contact {
     background-color: #eeeeee;
-    padding: 0px 0px;
 }
 
-/* Service Items */
-.service-item {
-    margin-bottom: 20px; /* More spacing between items */
-}
-
-/* Main Headings and Subheadings */
+/* Main Heading and Subheadings */
 h1, h2, h3 {
     font-weight: 600;
-    margin-bottom: 20px; /* Consistent spacing after headings */
 }
 
 h1 {
     font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 2rem;
+    margin-top: 20px; /* Margin after h2 */
 }
 
 h3 {
     font-size: 1.5rem;
+    margin-top: 20px; /* Margin after h3 */
 }
 
 /* Social Media Icons */
 .social-icons, .footer-social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Increased spacing between icons */
+    gap: 10px;
     margin-top: 20px;
 }
 
@@ -214,30 +139,46 @@ h3 {
 
 /* Footer Styling */
 footer {
-    background-color: #000022;
+    background-color: #000022; /* Dark Blue Background */
     color: #fff;
-    padding: 30px 0;
+    padding: 20px;
     text-align: center;
 }
 
 footer nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    list-style: none; /* Remove bullets from the footer's ul */
+    padding: 20; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center align footer links */
+    gap: 15px; /* Space between footer links */
+}
+
+footer nav ul li {
+    list-style: none; /* Explicitly remove bullets from footer li */
 }
 
 footer nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
+    color: #fff; /* Make the text white */
+    text-decoration: none; /* No underline */
+    font-weight: 500; /* Consistent font weight */
+    font-size: 1rem; /* Set readable font size */
 }
 
 footer nav ul li a:hover {
-    opacity: 0.8;
+    text-decoration: none; /* Ensure no underline on hover as well */
+    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
+}
+
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    /* Remove margins and make container full-width */
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 15px; /* Adjust padding for better fit */
+    }
 }
 
 /* Images */
@@ -249,18 +190,29 @@ footer nav ul li a:hover {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .container {
-        max-width: 100%;
-        margin: 0;
-        padding: 0 15px;
+    /* Header */
+    header .site-name h1 {
+        font-size: 1.4rem; /* Smaller font size for mobile */
     }
 
+    header nav ul {
+        flex-direction: row; /* Align items side by side (horizontal) */
+        justify-content: flex-end; /* Align the language options to the right */
+        gap: 15px; /* Space between language options */
+    }
+
+    header nav ul li {
+        margin-bottom: 0; /* Remove margin between items */
+    }
+
+    /* Section Padding */
     section {
-        padding: 0px 0px; /* Reduced padding for mobile */
+        padding: 20px 20px; /* Less padding on mobile */
     }
 
+    /* Main Heading Sizes for Mobile */
     h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Smaller heading size for mobile */
     }
 
     h2 {
