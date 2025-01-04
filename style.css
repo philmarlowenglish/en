@@ -6,6 +6,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Load Montserrat Font from Root Directory */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 /* Body Styling */
 body {
     font-family: 'Montserrat', sans-serif;
