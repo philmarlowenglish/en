@@ -115,44 +115,44 @@ body {
 
 /* Section Styling */
 section {
-    margin-bottom: 50px; /* Increased spacing between sections */
-    padding: 40px 20px; /* Uniform padding inside each section */
+    margin-bottom: 20px; /* Increased spacing between sections */
+    padding: 20px 20px; /* Uniform padding inside each section */
 }
 
 /* Hero Section */
 .hero {
     background-color: #ffffff;
     text-align: center;
-    padding: 60px 20px; /* Slightly larger padding for the hero section */
+    padding: 20px 20px; /* Slightly larger padding for the hero section */
 }
 
 /* USP Section */
 .usp {
     background-color: #eeeeee;
-    padding: 50px 20px;
+    padding: 20px 20px;
 }
 
 /* Services Section */
 .services {
     background-color: #ffffff;
-    padding: 50px 20px;
+    padding: 20px 20px;
 }
 
 /* Image Section */
 .image {
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 /* Contact Section */
 .contact {
     background-color: #eeeeee;
-    padding: 50px 20px;
+    padding: 20px 20px;
 }
 
 /* Service Items */
 .service-item {
-    margin-bottom: 30px; /* More spacing between items */
+    margin-bottom: 20px; /* More spacing between items */
 }
 
 /* Main Headings and Subheadings */
@@ -230,7 +230,7 @@ footer nav ul li a:hover {
     }
 
     section {
-        padding: 30px 20px; /* Reduced padding for mobile */
+        padding: 20px 20px; /* Reduced padding for mobile */
     }
 
     h1 {
