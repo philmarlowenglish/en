@@ -104,43 +104,68 @@ header nav ul li a:hover {
 /* Section Styling */
 section {
     padding: 20px;
+    display: block; /* Ensure sections are block-level */
 }
 
+/* Hero Section - Stacking Content Vertically */
 .hero {
     background-color: #ffffff;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Full screen height for hero section */
 }
 
-.usp, .contact {
+/* USP Section */
+.usp {
     background-color: #eeeeee; /* Light grey */
+    display: block; /* Ensure it's block-level */
+    text-align: center; /* Center the text horizontally */
 }
 
-.services, .image {
+/* Services Section */
+.services {
     background-color: #ffffff;
+    display: block; /* Ensure block-level display */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #eeeeee; /* Light grey */
+    display: block; /* Ensure block-level display */
+    text-align: center; /* Center the text horizontally */
 }
 
 /* Main Heading and Subheadings */
 h1, h2, h3 {
     font-weight: 600;
+    display: block; /* Ensure they are block-level */
+    margin-bottom: 20px; /* Space below each heading */
 }
 
+/* Specific Styles for h1, h2, h3 */
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 2rem;
-    margin-top: 20px;
+    margin-top: 20px; /* Margin after h2 */
 }
 
 h3 {
     font-size: 1.5rem;
-    margin-top: 20px;
+    margin-top: 20px; /* Margin after h3 */
+}
+
+/* Paragraphs and Text */
+p {
+    display: block; /* Ensure paragraphs are block-level */
+    margin-bottom: 15px; /* Space between paragraphs */
+    text-align: center; /* Center text for readability */
 }
 
 /* Social Media Icons */
