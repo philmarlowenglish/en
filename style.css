@@ -40,37 +40,42 @@ header {
 header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Ensures vertical centering */
 }
 
-header nav ul li a {
-    color: #fff; /* Make the text white */
-    text-decoration: none; /* Remove the underline */
-    font-weight: 500; /* Ensure consistent font weight */
-    font-size: 1rem; /* Set a readable font size */
-    list-style: none; /* Remove bullets */
-    padding: 0; /* Remove extra padding */
-    margin: 0; /* Remove extra margin */
-    display: flex; /* Align items horizontally */
-    gap: 15px; /* Space between items */
+/* Additional tweaks to ensure perfect vertical alignment */
+header h1 {
+    margin: 0; /* Remove any default margin */
+    line-height: 1; /* Ensures title text doesn't push content */
 }
 
+/* Nav Links Styling */
 header nav ul {
-    list-style: none; /* Remove bullets from the ul */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Ensure items are aligned horizontally */
-    gap: 15px; /* Space between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
 header nav ul li {
-    list-style: none; /* Explicitly remove bullets from li */
+    list-style: none;
 }
 
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    align-items: center; /* Centers text inside links */
+    padding: 0;
+    margin: 0;
+}
 
 header nav ul li a:hover {
-    text-decoration: none; /* Ensure no underline on hover as well */
-    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
+    text-decoration: none;
+    opacity: 0.8;
 }
 
 /* Section Styling */
