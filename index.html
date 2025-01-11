@@ -81,8 +81,30 @@
                     <h3>Group sessions (online)</h3>
                     <p>Bring your team together through <b>communication-based</b>, <b>interactive</b> training. Create a safe space which increases <b>cross-team communication</b> and <b>knowledge sharing</b> within your organization, as well as <b>team building</b>.</p>
                 </div>
-
             </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="testimonial-carousel">
+                <div class="testimonial-card active">
+                    <p>"The team was incredible to work with, and their product exceeded all our expectations."</p>
+                    <h4>- John Doe</h4>
+                    <p>CEO, Example Co.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Fantastic experience! We saw immediate improvements and a significant ROI."</p>
+                    <h4>- Jane Smith</h4>
+                    <p>Marketing Director, XYZ Inc.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"A game changer for our business. Highly recommend working with this team!"</p>
+                    <h4>- Emily Johnson</h4>
+                    <p>Operations Manager, ABC Ltd.</p>
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
         </section>
 
         <!-- Image Section -->
@@ -126,5 +148,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentIndex = 0;
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            const totalTestimonials = testimonialCards.length;
+
+            const showTestimonial = (index) => {
+                testimonialCards.forEach((card, i) => {
+                    card.classList.remove('active');
+                    if (i === index) {
+                        card.classList.add('active');
+                    }
+                });
+            };
+
+            document.querySelector('.next').addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalTestimonials;
+                showTestimonial(currentIndex);
+            });
+
+            document.querySelector('.prev').addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
+                showTestimonial(currentIndex);
+            });
+
+            // Initialize with the first testimonial visible
+            showTestimonial(currentIndex);
+        });
+    </script>
 </body>
 </html>
