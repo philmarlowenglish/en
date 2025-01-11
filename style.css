@@ -1,183 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Freelancer website - services and contact information">
-    <title>Phil Marlow English</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="pmelogo.jpg" alt="Phil Marlow English logo" width="50" height="50">
-            </div>
-            <div class="site-name">
-                <h1>Phil Marlow English</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" aria-label="English">EN</a></li>
-                    <li><a href="de.html" aria-label="German">DE</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="main-image">
-                    <img src="phil.png" alt="Photo of Phil Marlow">
-                </div>
-                <h2>Phil Marlow</h2>
-                <p>English language consulting and training</p>
+/* Load Montserrat Font from Root Directory */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
 
-                <!-- Social Media Icons -->
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/marlow.phil/" target="_blank" rel="noopener noreferrer">
-                        <img src="instagram-icon.png" alt="Instagram" width="24" height="24">
-                    </a>
-                    <a href="https://www.linkedin.com/in/philmarlowenglish/" target="_blank" rel="noopener noreferrer">
-                        <img src="linkedin-icon.png" alt="LinkedIn" width="24" height="24">
-                    </a>
-                </div>
-            </div>
-        </section>
+/* Body Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff; /* Light background for contrast */
+}
 
-        <!-- USP Section -->
-        <section class="usp">
-            <div class="container">
-                <h2>Mentor, Coach, Human</h2>
-                <div class="service-item">
-                    <h3>Mentor</h3>
-                    <p>Let me be your guide on your language journey, helping you to develop your communication skills in English.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Coach</h3>
-                    <p>An important part of my role is to listen carefully and ask questions. Our conversations about you and your life will be reflective and relevant.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Human</h3>
-                    <p>With patience and empathy, I can understand how to build your confidence and help you to find your motivation to develop your skills.</p>
-                </div>
-            </div>
-        </section>
+/* Layout Container Styling */
+.container {
+    max-width: 60%; /* Limit container width to 60% of the viewport */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding for content inside the container */
+}
 
-        <!-- Services Section -->
-        <section class="services">
-            <div class="container">
-                <h2>Training in English</h2>
-                <div class="service-item">
-                    <h3>1:1 sessions (online)</h3>
-                    <p>Through our conversations, we'll develop <b>your own personal brand of English</b> and build your <b>self-confidence</b>, allowing you to communicate in everyday situations in English.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Group sessions (online)</h3>
-                    <p>Bring your team together through <b>communication-based</b>, <b>interactive</b> training. Create a safe space which increases <b>cross-team communication</b> and <b>knowledge sharing</b> within your organization, as well as <b>team building</b>.</p>
-                </div>
-            </div>
-        </section>
+header {
+    background-color: #000033; /* Dark Blue Background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for visibility */
+}
 
-        <!-- Testimonials Section -->
-        <section class="testimonials-section">
-            <div class="testimonial-carousel">
-                <div class="testimonial-card active">
-                    <p>"The team was incredible to work with, and their product exceeded all our expectations."</p>
-                    <h4>- John Doe</h4>
-                    <p>CEO, Example Co.</p>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Fantastic experience! We saw immediate improvements and a significant ROI."</p>
-                    <h4>- Jane Smith</h4>
-                    <p>Marketing Director, XYZ Inc.</p>
-                </div>
-                <div class="testimonial-card">
-                    <p>"A game changer for our business. Highly recommend working with this team!"</p>
-                    <h4>- Emily Johnson</h4>
-                    <p>Operations Manager, ABC Ltd.</p>
-                </div>
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-        </section>
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        <!-- Image Section -->
-        <section class="image">
-            <div class="container">
-                <div class="main-image">
-                    <img src="video-call.png" alt="AI generated image of four people in a video call">
-                </div>
-            </div>
-        </section>
+/* Additional tweaks to ensure perfect vertical alignment */
+header h1 {
+    margin: 0; /* Remove any default margin */
+    line-height: 1; /* Ensures title text doesn't push content */
+}
 
-        <!-- Contact Section -->
-        <section class="contact">
-            <div class="container">
-                <h2>Contact/Pricing</h2>
-                <p>Are you or your company looking for an <b>EU-based trainer</b> who offers <b>customized courses in Business English</b>?</p>
-                <p>Contact me to discuss what you need and how I can help. All prices are negotiable.</p>
-                <p>Email me at: <a href="mailto:philmarlowenglish@gmail.com">philmarlowenglish@gmail.com</a></p>
-            </div>
-        </section>
-    </main>
+/* Nav Links Styling */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <nav>
-                <p>&copy; 2024 Phil Marlow English</p>
-                <ul>
-                    <li><a href="imprint.html">Imprint</a></li>
-                    <li><a href="privacy.html">Data privacy policy</a></li>
-                </ul>
-            </nav>
-            <!-- Social Media Icons -->
-            <div class="footer-social-icons">
-                <a href="https://www.instagram.com/marlow.phil/" target="_blank" rel="noopener noreferrer">
-                    <img src="instagram-icon.png" alt="Instagram" width="24" height="24">
-                </a>
-                <a href="https://www.linkedin.com/in/philmarlowenglish/" target="_blank" rel="noopener noreferrer">
-                    <img src="linkedin-icon.png" alt="LinkedIn" width="24" height="24">
-                </a>
-            </div>
-        </div>
-    </footer>
+header nav ul li {
+    list-style: none;
+}
 
-    <!-- JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let currentIndex = 0;
-            const testimonialCards = document.querySelectorAll('.testimonial-card');
-            const totalTestimonials = testimonialCards.length;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    align-items: center; /* Centers text inside links */
+    padding: 0;
+    margin: 0;
+}
 
-            const showTestimonial = (index) => {
-                testimonialCards.forEach((card, i) => {
-                    card.classList.remove('active');
-                    if (i === index) {
-                        card.classList.add('active');
-                    }
-                });
-            };
+header nav ul li a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
 
-            document.querySelector('.next').addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % totalTestimonials;
-                showTestimonial(currentIndex);
-            });
+/* Section Styling */
+section {
+    padding: 10px 10px;
+}
 
-            document.querySelector('.prev').addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
-                showTestimonial(currentIndex);
-            });
+/* Alternating Section Colors */
+.hero {
+    background-color: #ffffff;
+    text-align: center; /* Horizontally center text */
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Horizontally center items */
+}
 
-            // Initialize with the first testimonial visible
-            showTestimonial(currentIndex);
-        });
-    </script>
-</body>
-</html>
+.usp {
+    background-color: #eeeeee; /* Light grey */
+}
+
+.services {
+    background-color: #ffffff;
+}
+
+.image {
+    background-color: #ffffff;
+}
+
+.contact {
+    background-color: #eeeeee;
+}
+
+/* Main Heading and Subheadings */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px; /* Margin after h2 */
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px; /* Margin after h3 */
+}
+
+/* Social Media Icons */
+.social-icons, .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons img, .footer-social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000022; /* Dark Blue Background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none; /* Remove bullets from the footer's ul */
+    padding: 20; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center align footer links */
+    gap: 15px; /* Space between footer links */
+}
+
+footer nav ul li {
+    list-style: none; /* Explicitly remove bullets from footer li */
+}
+
+footer nav ul li a {
+    color: #fff; /* Make the text white */
+    text-decoration: none; /* No underline */
+    font-weight: 500; /* Consistent font weight */
+    font-size: 1rem; /* Set readable font size */
+}
+
+footer nav ul li a:hover {
+    text-decoration: none; /* Ensure no underline on hover as well */
+    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
+}
+
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    /* Remove margins and make container full-width */
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 15px; /* Adjust padding for better fit */
+    }
+}
+
+/* Images */
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Header */
+    header .site-name h1 {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+
+    header nav ul {
+        flex-direction: row; /* Align items side by side (horizontal) */
+        justify-content: flex-end; /* Align the language options to the right */
+        gap: 15px; /* Space between language options */
+    }
+
+    header nav ul li {
+        margin-bottom: 0; /* Remove margin between items */
+    }
+
+    /* Section Padding */
+    section {
+        padding: 20px 20px; /* Less padding on mobile */
+    }
+
+    /* Main Heading Sizes for Mobile */
+    h1 {
+        font-size: 2rem; /* Smaller heading size for mobile */
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Testimonial Carousel Styling */
+.testimonial-carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    width: 80%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial-card.active {
+    opacity: 1;
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #666;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
