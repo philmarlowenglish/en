@@ -109,16 +109,24 @@
             <div class="container">
                 <h2>Testimonials</h2>
 
-<p>
-  This is the visible summary text.
-</p>
-
-<details>
-  <summary>Read more</summary>
-  <p>
-    This is the hidden text that appears when you click "Read more."
-  </p>
-</details>
+<p>This is the visible summary text.</p>
+<div id="more-text" style="display: none;">
+  <p>This is the hidden text that shows up when you click "Read more."</p>
+</div>
+<button id="read-more-btn">Read more</button>
+                
+<script>
+  document.getElementById("read-more-btn").addEventListener("click", function() {
+    var moreText = document.getElementById("more-text");
+    if (moreText.style.display === "none") {
+      moreText.style.display = "block";
+      this.textContent = "Read less";
+    } else {
+      moreText.style.display = "none";
+      this.textContent = "Read more";
+    }
+  });
+</script>
 
                 
                 <p><i>"We’ve been working with Phil since our decision to switch our working language to English. The openness and welcoming style of Phil’s training sessions has helped even our most introverted team members to confidently do business in English on a daily basis. An unexpected additional benefit has been that the training with Phil has also helped our team at thomann.io to bond with other staff members who aren't necessarily a part of their regular contacts. 5/5 stars."</i>
