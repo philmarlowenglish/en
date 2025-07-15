@@ -110,25 +110,47 @@
                 <h2>Testimonials</h2>
 
 <p>
-  Welcome to Phil Marlow English. 
-  <span id="read-more-link" style="color: blue; cursor: pointer; text-decoration: underline;">
+  Welcome to Phil Marlow English.
+  <span class="dots">...</span>
+  <span class="more-text" style="display: none;">
+    I’m a qualified English teacher offering online lessons to help you speak confidently and fluently.
+  </span>
+  <span class="read-more-link" style="color: blue; cursor: pointer; text-decoration: underline;">
     Read more
   </span>
 </p>
-<div id="more-text" style="display: none;">
-  <p>I’m a qualified English teacher offering online lessons to help you speak confidently and fluently.</p>
-</div>
+
+<p>
+  Learn English online.
+  <span class="dots">...</span>
+  <span class="more-text" style="display: none;">
+    Flexible schedules and lessons tailored to your needs.
+  </span>
+  <span class="read-more-link" style="color: blue; cursor: pointer; text-decoration: underline;">
+    Read more
+  </span>
+</p>
                 
 <script>
-  document.getElementById("read-more-link").addEventListener("click", function() {
-    var moreText = document.getElementById("more-text");
-    if (moreText.style.display === "none") {
-      moreText.style.display = "block";
-      this.textContent = "Read less";
-    } else {
-      moreText.style.display = "none";
-      this.textContent = "Read more";
-    }
+  document.addEventListener("DOMContentLoaded", function() {
+    const readMoreLinks = document.querySelectorAll(".read-more-link");
+
+    readMoreLinks.forEach(function(link) {
+      link.addEventListener("click", function() {
+        const moreText = this.previousElementSibling;
+        const dots = moreText.previousElementSibling;
+
+        if (moreText.style.display === "none" || moreText.style.display === "") {
+          moreText.style.display = "inline";
+          dots.style.display = "none";
+          this.textContent = " Read less";
+        } else {
+          moreText.style.display = "none";
+          dots.style.display = "inline";
+          this.textContent = " Read more";
+        }
+      });
+    });
   });
 </script>
 
