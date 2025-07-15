@@ -109,14 +109,18 @@
             <div class="container">
                 <h2>Testimonials</h2>
 
-<p>This is the visible summary text.</p>
+<p>
+  Welcome to Phil Marlow English. 
+  <span id="read-more-link" style="color: blue; cursor: pointer; text-decoration: underline;">
+    Read more
+  </span>
+</p>
 <div id="more-text" style="display: none;">
-  <p>This is the hidden text that shows up when you click "Read more."</p>
+  <p>I’m a qualified English teacher offering online lessons to help you speak confidently and fluently.</p>
 </div>
-<button id="read-more-btn">Read more</button>
                 
 <script>
-  document.getElementById("read-more-btn").addEventListener("click", function() {
+  document.getElementById("read-more-link").addEventListener("click", function() {
     var moreText = document.getElementById("more-text");
     if (moreText.style.display === "none") {
       moreText.style.display = "block";
