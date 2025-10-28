@@ -14,6 +14,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'OpenSansExtraBold';
+    src: url('OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 /* Body Styling */
 body {
     font-family: 'OpenSans', regular;
@@ -118,7 +125,8 @@ section {
 
 /* Main Heading and Subheadings */
 h1, h2, h3 {
-    font-weight: 600;
+    font-family: 'OpenSansExtraBold', 'OpenSans', sans-serif;
+    font-weight: 800;
 }
 
 h1 {
