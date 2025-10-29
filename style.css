@@ -210,15 +210,19 @@ footer nav ul li a:hover {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    /* Remove margins and make container full-width (from your first mobile block) */
+    /* Remove margins and make container full-width */
     .container {
         max-width: 100%;
         margin: 0;
         padding: 0 15px; /* Adjust padding for better fit */
     }
 
+    /* 🎯 NEW FIX: Reduce the base font size for better reading on mobile */
+    body {
+        font-size: 0.95rem; /* Makes standard paragraph text slightly smaller */
+    }
+
     /* Header Centering Fixes */
-    /* 1. Stack and center the main header elements (Logo, Title, Nav) */
     header .container {
         flex-direction: column; 
         align-items: center;    
@@ -227,13 +231,16 @@ footer nav ul li a:hover {
 
     /* Header */
     header .site-name h1 {
-        font-size: 1.2rem; /* Smaller font size for mobile */
-        text-align: center; /* Explicitly center the text inside the h1 */
+        font-size: 1.2rem; /* Retained smaller font size for mobile title */
+        text-align: center; 
     }
+
+    header nav ul li a {
+        font-size: 0.9rem; /* Ensures language links are appropriately sized */
+    }
 
     header nav ul {
         flex-direction: row; 
-        /* 2. Center the language links */
         justify-content: center; 
         gap: 15px; 
     }
@@ -244,12 +251,12 @@ footer nav ul li a:hover {
 
     /* Section Padding */
     section {
-        padding: 20px 20px; /* Less padding on mobile */
+        padding: 20px 20px; 
     }
 
-    /* Main Heading Sizes for Mobile */
+    /* Main Heading Sizes for Mobile (these are already smaller) */
     h1 {
-        font-size: 1.2rem; 
+        font-size: 2rem; 
     }
 
     h2 {
