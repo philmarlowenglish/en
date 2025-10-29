@@ -214,29 +214,29 @@ footer nav ul li a:hover {
     .container {
         max-width: 100%;
         margin: 0;
-        padding: 0 15px; /* Adjust padding for better fit */
+        padding: 0 15px;
     }
 
-    /* 🎯 NEW FIX: Reduce the base font size for better reading on mobile */
-    body {
-        font-size: 0.95rem; /* Makes standard paragraph text slightly smaller */
-    }
-
     /* Header Centering Fixes */
-    header .container {
+    /* Use #header for higher specificity */
+    #header .container {
         flex-direction: column; 
         align-items: center;    
         gap: 5px;               
     }
 
-    /* Header */
-    header .site-name h1 {
-        font-size: 1.2rem; /* Retained smaller font size for mobile title */
+    /* Header Text Size Adjustments */
+    /* Use #header for higher specificity on the Title (h1) */
+    #header .site-name h1 {
+        /* Set desired small size */
+        font-size: 1.2rem; 
         text-align: center; 
     }
-
-    header nav ul li a {
-        font-size: 0.9rem; /* Ensures language links are appropriately sized */
+    
+    /* Use #header for higher specificity on the Nav links */
+    #header nav ul li a {
+        /* Set desired small size */
+        font-size: 0.9rem; 
     }
 
     header nav ul {
@@ -254,7 +254,7 @@ footer nav ul li a:hover {
         padding: 20px 20px; 
     }
 
-    /* Main Heading Sizes for Mobile (these are already smaller) */
+    /* Main Content Heading Sizes */
     h1 {
         font-size: 2rem; 
     }
