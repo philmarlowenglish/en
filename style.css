@@ -59,7 +59,7 @@ header .logo {
 }
 
 header .site-name {
-    width: 75%; /* 80% width for the title container */
+    width: 60%; /* 80% width for the title container */
     text-align: center; /* Center the H1 text inside its 80% column */
 }
 
