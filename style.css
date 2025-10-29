@@ -54,12 +54,12 @@ header .container {
 
 /* --- Desktop Header: 20% Logo, 80% Title --- */
 header .logo {
-    width: 20%; /* 20% width for the logo container */
+    width: 19%; /* 20% width for the logo container */
     text-align: center; /* Center the logo image inside its 20% column */
 }
 
 header .site-name {
-    width: 80%; /* 80% width for the title container */
+    width: 79%; /* 80% width for the title container */
     text-align: center; /* Center the H1 text inside its 80% column */
 }
 
