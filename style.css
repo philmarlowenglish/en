@@ -113,7 +113,7 @@ header .container {
 header .logo {
 
     width: 20%; /* 20% width for the logo container */
-
+    min-width: 75px; /* Ensures the logo container is at least 75px wide */
     text-align: center; /* Center the logo image inside its 20% column */
 
 }
