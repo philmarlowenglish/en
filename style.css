@@ -37,13 +37,13 @@ body {
 }
 
 /* Make the header stay at the top when scrolling */
-header .site-header {
+.site-header {
   position: sticky;
   top: 0;
-  background-color: #000022;   /* or your site color */
-  z-index: 1000;             /* keeps it above other content */
+  background-color: #000022; /* dark blue */
+  z-index: 1000;
   padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* adds a soft shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
