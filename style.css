@@ -47,9 +47,10 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* ADD THIS NEW BLOCK: Removes horizontal padding from the inner header container */
 header .container {
-    display: flex;
-    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* --- Desktop Header: 20% Logo, 80% Title --- */
@@ -59,7 +60,7 @@ header .logo {
 }
 
 header .site-name {
-    width: 60%; /* 80% width for the title container */
+    width: 75%; /* 80% width for the title container */
     text-align: center; /* Center the H1 text inside its 80% column */
 }
 
