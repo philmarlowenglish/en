@@ -426,36 +426,6 @@ footer nav ul li a:hover {
 
     
 
-    #header nav ul li a {
-
-        /* Keep nav links smaller */
-
-        font-size: 0.9rem; 
-
-    }
-
-
-
-    header nav ul {
-
-        flex-direction: row; 
-
-        justify-content: center; 
-
-        gap: 15px; 
-
-    }
-
-
-
-    header nav ul li {
-
-        margin-bottom: 0; 
-
-    }
-
-
-
     /* Section Padding */
 
     section {
