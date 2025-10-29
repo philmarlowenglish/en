@@ -1,280 +1,559 @@
 style.css
 
+
+
 /* General Reset */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'OpenSans', regular;
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'OpenSans', regular;
+
 }
+
+
 
 /* Load Montserrat Font from Root Directory */
-@font-face {
-    font-family: 'OpenSans';
-    src: url('OpenSans-Regular.ttf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-}
 
 @font-face {
-    font-family: 'OpenSansExtraBold';
-    src: url('OpenSans-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
+
+    font-family: 'OpenSans';
+
+    src: url('OpenSans-Regular.ttf') format('opentype');
+
+    font-weight: 500;
+
+    font-style: normal;
+
 }
+
+
+
+@font-face {
+
+    font-family: 'OpenSansExtraBold';
+
+    src: url('OpenSans-ExtraBold.ttf') format('truetype');
+
+    font-weight: 800;
+
+    font-style: normal;
+
+}
+
+
 
 /* Body Styling */
+
 body {
-    font-family: 'OpenSans', regular;
-    line-height: 1.6;
-    color: #333;
-    background-color: #ffffff; /* Light background for contrast */
+
+    font-family: 'OpenSans', regular;
+
+    line-height: 1.6;
+
+    color: #333;
+
+    background-color: #ffffff; /* Light background for contrast */
+
 }
+
+
 
 /* Layout Container Styling */
+
 .container {
-    max-width: 60%; /* Limit container width to 60% of the viewport */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add padding for content inside the container */
+
+    max-width: 60%; /* Limit container width to 60% of the viewport */
+
+    margin: 0 auto; /* Center the container */
+
+    padding: 0 20px; /* Add padding for content inside the container */
+
 }
+
+
 
 /* Make the header stay at the top when scrolling */
+
 #header {
-  position: sticky;
-  top: 0;
-  background-color: #000022;
-  color: white;
-  z-index: 1000;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  position: sticky;
+
+  top: 0;
+
+  background-color: #000022;
+
+  color: white;
+
+  z-index: 1000;
+
+  padding: 10px 20px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
+
+
 
 header .container {
-    display: flex;
-    align-items: center;
+
+    display: flex;
+
+    align-items: center;
+
 }
+
+
 
 /* --- Desktop Header: 20% Logo, 80% Title --- */
+
 header .logo {
-    width: 20%; /* 20% width for the logo container */
-    text-align: center; /* Center the logo image inside its 20% column */
+
+    width: 20%; /* 20% width for the logo container */
+
+    text-align: center; /* Center the logo image inside its 20% column */
+
 }
+
+
 
 header .site-name {
-    width: 60%; /* 80% width for the title container */
-    text-align: center; /* Center the H1 text inside its 80% column */
+
+    width: 60%; /* 80% width for the title container */
+
+    text-align: center; /* Center the H1 text inside its 80% column */
+
 }
+
+
 
 /* Additional tweaks to ensure perfect vertical alignment */
+
 header h1 {
-    margin: 0; /* Remove any default margin */
-    line-height: 1; /* Ensures title text doesn't push content */
+
+    margin: 0; /* Remove any default margin */
+
+    line-height: 1; /* Ensures title text doesn't push content */
+
 }
+
+
 
 /* Nav Links Styling */
+
 header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px;
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    gap: 15px;
+
 }
+
+
 
 header nav ul li {
-    list-style: none;
+
+    list-style: none;
+
 }
+
+
 
 header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    display: flex;
-    align-items: center; /* Centers text inside links */
-    padding: 0;
-    margin: 0;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    font-size: 1rem;
+
+    display: flex;
+
+    align-items: center; /* Centers text inside links */
+
+    padding: 0;
+
+    margin: 0;
+
 }
+
+
 
 header nav ul li a:hover {
-    text-decoration: none;
-    opacity: 0.8;
+
+    text-decoration: none;
+
+    opacity: 0.8;
+
 }
+
+
 
 /* Section Styling */
+
 section {
-    padding: 10px 10px;
+
+    padding: 10px 10px;
+
 }
+
+
 
 /* Alternating Section Colors */
+
 .hero {
-    background-color: #ffffff;
-    text-align: center; /* Horizontally center text */
-    display: flex; /* Use flexbox for vertical centering */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Horizontally center items */
+
+    background-color: #ffffff;
+
+    text-align: center; /* Horizontally center text */
+
+    display: flex; /* Use flexbox for vertical centering */
+
+    flex-direction: column; /* Stack items vertically */
+
+    justify-content: center; /* Center items vertically */
+
+    align-items: center; /* Horizontally center items */
+
 }
+
+
 
 .usp {
-    background-color: #eeeeee; /* Light grey */
+
+    background-color: #eeeeee; /* Light grey */
+
 }
+
+
 
 .services {
-    background-color: #ffffff;
+
+    background-color: #ffffff;
+
 }
+
+
 
 .image {
-    background-color: #ffffff;
+
+    background-color: #ffffff;
+
 }
+
+
 
 .contact {
-    background-color: #eeeeee;
+
+    background-color: #eeeeee;
+
 }
+
+
 
 .testimonials {
-    background-color: #ffffff;
+
+    background-color: #ffffff;
+
 }
+
+
 
 /* Main Heading and Subheadings */
+
 h1, h2, h3 {
-    font-family: 'OpenSansExtraBold', 'OpenSans', sans-serif;
-    font-weight: 800;
+
+    font-family: 'OpenSansExtraBold', 'OpenSans', sans-serif;
+
+    font-weight: 800;
+
 }
+
+
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+
 }
+
+
 
 h2 {
-    font-size: 2rem;
-    margin-top: 20px; /* Margin after h2 */
+
+    font-size: 2rem;
+
+    margin-top: 20px; /* Margin after h2 */
+
 }
+
+
 
 h3 {
-    font-size: 1.5rem;
-    margin-top: 20px; /* Margin after h3 */
+
+    font-size: 1.5rem;
+
+    margin-top: 20px; /* Margin after h3 */
+
 }
+
+
 
 /* Social Media Icons */
+
 .social-icons, .footer-social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
 }
+
+
 
 .social-icons img, .footer-social-icons img {
-    width: 24px;
-    height: 24px;
+
+    width: 24px;
+
+    height: 24px;
+
 }
+
+
 
 /* Footer Styling */
+
 footer {
-    background-color: #000022; /* Dark Blue Background */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+
+    background-color: #000022; /* Dark Blue Background */
+
+    color: #fff;
+
+    padding: 20px;
+
+    text-align: center;
+
 }
+
+
 
 footer nav ul {
-    list-style: none; /* Remove bullets from the footer's ul */
-    padding: 20; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Align items horizontally */
-    justify-content: center; /* Center align footer links */
-    gap: 15px; /* Space between footer links */
+
+    list-style: none; /* Remove bullets from the footer's ul */
+
+    padding: 20; /* Remove default padding */
+
+    margin: 0; /* Remove default margin */
+
+    display: flex; /* Align items horizontally */
+
+    justify-content: center; /* Center align footer links */
+
+    gap: 15px; /* Space between footer links */
+
 }
+
+
 
 footer nav ul li {
-    list-style: none; /* Explicitly remove bullets from footer li */
+
+    list-style: none; /* Explicitly remove bullets from footer li */
+
 }
+
+
 
 footer nav ul li a {
-    color: #fff; /* Make the text white */
-    text-decoration: none; /* No underline */
-    font-weight: 500; /* Consistent font weight */
-    font-size: 1rem; /* Set readable font size */
+
+    color: #fff; /* Make the text white */
+
+    text-decoration: none; /* No underline */
+
+    font-weight: 500; /* Consistent font weight */
+
+    font-size: 1rem; /* Set readable font size */
+
 }
 
+
+
 footer nav ul li a:hover {
-    text-decoration: none; /* Ensure no underline on hover as well */
-    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
+
+    text-decoration: none; /* Ensure no underline on hover as well */
+
+    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
+
 }
+
+
+
 
 
 /* Mobile Styles */
+
 @media screen and (max-width: 768px) {
-    /* Remove margins and make container full-width */
-    .container {
-        max-width: 100%;
-        margin: 0;
-        padding: 0 15px; /* Adjust padding for better fit */
-    }
+
+    /* Remove margins and make container full-width */
+
+    .container {
+
+        max-width: 100%;
+
+        margin: 0;
+
+        padding: 0 15px; /* Adjust padding for better fit */
+
+    }
+
 }
+
+
 
 /* Images */
+
 .main-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 5px;
+
 }
 
+
+
 /* Responsive Design */
+
 @media screen and (max-width: 768px) {
-    /* Remove margins and make container full-width */
-    .container {
-        max-width: 100%;
-        margin: 0;
-        padding: 0 15px;
-    }
 
-    /* Header Centering Fixes */
-    #header .container {
-        flex-direction: column; 
-        align-items: center;    
-        gap: 5px;               
-    }
+    /* Remove margins and make container full-width */
 
-    /* Header Text Size Adjustment (Using Specificity) */
-    #header .site-name h1 {
-        /* Set the header title to 1.8rem */
-        font-size: 1.8rem; 
-        text-align: center; 
-    }
-    
-    #header nav ul li a {
-        /* Keep nav links smaller */
-        font-size: 0.9rem; 
-    }
+    .container {
 
-    header nav ul {
-        flex-direction: row; 
-        justify-content: center; 
-        gap: 15px; 
-    }
+        max-width: 100%;
 
-    header nav ul li {
-        margin-bottom: 0; 
-    }
+        margin: 0;
 
-    /* Section Padding */
-    section {
-        padding: 20px 20px; 
-    }
+        padding: 0 15px;
 
-    /* Main Content Heading Sizes */
-    /* This targets all other H1s outside the header */
-    h1 {
-        /* Set all other H1s to the same size: 1.8rem */
-        font-size: 1.8rem; 
-    }
+    }
 
-    h2 {
-        font-size: 1.6rem;
-    }
 
-    h3 {
-        font-size: 1.3rem;
-    }
+
+    /* Header Centering Fixes */
+
+    #header .container {
+
+        flex-direction: column; 
+
+        align-items: center;    
+
+        gap: 5px;               
+
+    }
+
+
+
+    /* Header Text Size Adjustment (Using Specificity) */
+
+    #header .site-name h1 {
+
+        /* Set the header title to 1.8rem */
+
+        font-size: 1.8rem; 
+
+        text-align: center; 
+
+    }
+
+    
+
+    #header nav ul li a {
+
+        /* Keep nav links smaller */
+
+        font-size: 0.9rem; 
+
+    }
+
+
+
+    header nav ul {
+
+        flex-direction: row; 
+
+        justify-content: center; 
+
+        gap: 15px; 
+
+    }
+
+
+
+    header nav ul li {
+
+        margin-bottom: 0; 
+
+    }
+
+
+
+    /* Section Padding */
+
+    section {
+
+        padding: 20px 20px; 
+
+    }
+
+
+
+    /* Main Content Heading Sizes */
+
+    /* This targets all other H1s outside the header */
+
+    h1 {
+
+        /* Set all other H1s to the same size: 1.8rem */
+
+        font-size: 1.8rem; 
+
+    }
+
+
+
+    h2 {
+
+        font-size: 1.6rem;
+
+    }
+
+
+
+    h3 {
+
+        font-size: 1.3rem;
+
+    }
+
 }
