@@ -10,22 +10,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="pmelogo.jpg" alt="Phil Marlow English logo" width="50" height="50">
-            </div>
-            <div class="site-name">
-                <h1>Phil Marlow English</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" aria-label="English">EN</a></li>
-                    <li><a href="de.html" aria-label="German">DE</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
     <!-- Main Content -->
     <main>
@@ -44,27 +29,23 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <nav>
-                <p>&copy; 2024 Phil Marlow English</p>
-                <ul>
-                    <li><a href="imprint.html">Imprint</a></li>
-                    <li>|</li>
-                    <li><a href="privacy.html">Data privacy policy</a></li>
-                </ul>
-            </nav>
-            <!-- Social Media Icons -->
-            <div class="footer-social-icons">
-                <a href="https://www.instagram.com/philmarlowenglish/" target="_blank" rel="noopener noreferrer">
-                    <img src="instagram-icon.png" alt="Instagram" width="24" height="24">
-                </a>
-                <a href="https://www.linkedin.com/in/philmarlowenglish/" target="_blank" rel="noopener noreferrer">
-                    <img src="linkedin-icon.png" alt="LinkedIn" width="24" height="24">
-                </a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
+
+      <script>
+    // Load header.html
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+
+    // Load footer.html
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
 </body>
 </html>
