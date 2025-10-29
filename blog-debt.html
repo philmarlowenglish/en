@@ -1,62 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Freelancer website - services and contact information">
-    <title>Phil Marlow English</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freelancer website - services and contact information">
+  <title>Phil Marlow English</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<header style="position: sticky; top: 0; background: red; color: white; padding: 10px;">
-  I’m a sticky test header
-</header>
-    
 <body>
-    <!-- Header -->
-    
+  <!-- Header -->
+  <div id="header"></div>
 
-    <!-- Main Content -->
-    <main>
+  <!-- Main Content -->
+  <main>
+    <section class="blog">
+      <div class="container">
+        <div class="main-image">
+          <img src="blog-debt (trimmed).png" alt="AI-generated image of a letter B gesturing to be silent">
+        </div>
 
-        <section class="blog">
-            <div class="container">
+        <h2>Blog: Why does debt have a silent b?</h2>
+        <p>a</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+      </div>
+    </section>
+  </main>
 
-                <div class="main-image">
-                <img src="blog-debt (trimmed).png" alt="AI-generated image of a letter B gesturing to be silent">
-                </div>
+  <div id="footer"></div>
 
-                <h2>Blog: Why does debt have a silent b?</h2>
-                <p>a</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-                <p>text</p>
-
-            </div>
-        </section>
-
-    </main>
-
-    <div id="footer"></div>
-
-     <script>
+  <script>
+    // Load header
     fetch("header.html")
       .then(r => r.text())
       .then(data => document.getElementById("header").innerHTML = data);
 
+    // Load footer
     fetch("footer.html")
       .then(r => r.text())
       .then(data => document.getElementById("footer").innerHTML = data);
   </script>
-
 </body>
 </html>
