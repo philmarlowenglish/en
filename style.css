@@ -78,7 +78,7 @@ header nav ul li a:hover {
 }
 
 /* Make the header stay at the top when scrolling */
-site-header {
+header .site-header {
   position: sticky;
   top: 0;
   background-color: #000022;   /* or your site color */
