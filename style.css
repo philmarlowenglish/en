@@ -63,11 +63,6 @@ header .site-name {
     text-align: center; /* Center the H1 text inside its 80% column */
 }
 
-header nav {
-    /* Ensure navigation takes up minimal space and doesn't interfere with 20/80 split */
-    margin-left: auto; /* Pushes the nav to the far right */
-}
-
 /* Additional tweaks to ensure perfect vertical alignment */
 header h1 {
     margin: 0; /* Remove any default margin */
