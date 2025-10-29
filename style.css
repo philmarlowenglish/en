@@ -81,7 +81,7 @@ header nav ul li a:hover {
 .site-header {
   position: sticky;
   top: 0;
-  background-color: white;   /* or your site color */
+  background-color: #000022;   /* or your site color */
   z-index: 1000;             /* keeps it above other content */
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* adds a soft shadow */
