@@ -210,36 +210,53 @@ footer nav ul li a:hover {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    /* Header */
-    header .site-name h1 {
-        font-size: 1.2rem; /* Smaller font size for mobile */
+    /* Remove margins and make container full-width (from your first mobile block) */
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 15px; /* Adjust padding for better fit */
+    }
+
+    /* Header Centering Fixes */
+    /* 1. Stack and center the main header elements (Logo, Title, Nav) */
+    header .container {
+        flex-direction: column; 
+        align-items: center;    
+        gap: 5px;               
     }
 
-    header nav ul {
-        flex-direction: row; /* Align items side by side (horizontal) */
-        justify-content: flex-end; /* Align the language options to the right */
-        gap: 15px; /* Space between language options */
-    }
+    /* Header */
+    header .site-name h1 {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+        text-align: center; /* Explicitly center the text inside the h1 */
+    }
 
-    header nav ul li {
-        margin-bottom: 0; /* Remove margin between items */
-    }
+    header nav ul {
+        flex-direction: row; 
+        /* 2. Center the language links */
+        justify-content: center; 
+        gap: 15px; 
+    }
 
-    /* Section Padding */
-    section {
-        padding: 20px 20px; /* Less padding on mobile */
-    }
+    header nav ul li {
+        margin-bottom: 0; 
+    }
 
-    /* Main Heading Sizes for Mobile */
-    h1 {
-        font-size: 2rem; /* Smaller heading size for mobile */
-    }
+    /* Section Padding */
+    section {
+        padding: 20px 20px; /* Less padding on mobile */
+    }
 
-    h2 {
-        font-size: 1.6rem;
-    }
+    /* Main Heading Sizes for Mobile */
+    h1 {
+        font-size: 2rem; 
+    }
 
-    h3 {
-        font-size: 1.3rem;
-    }
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
 }
