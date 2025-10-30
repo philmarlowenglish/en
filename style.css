@@ -16,7 +16,7 @@ html {
 
     box-sizing: border-box;
 
-    font-family: 'OpenSans', regular;
+    font-family: 'OpenSans', sans-serif;
 
 }
 
@@ -28,9 +28,9 @@ html {
 
     font-family: 'OpenSans';
 
-    src: url('OpenSans-Regular.ttf') format('opentype');
+    src: url('OpenSans-Regular.ttf') format('truetype');
 
-    font-weight: 500;
+    font-weight: 400;
 
     font-style: normal;
 
@@ -85,15 +85,6 @@ main {
 }
 /* ________________________________________ */
 
-
-/* Make the header stay at the top when scrolling */
-#header {
-    /* ... rest of the #header styles ... */
-}
-
-
-
-/* Make the header stay at the top when scrolling */
 
 /* Make the header stay at the top when scrolling */
 #header {
@@ -281,7 +272,7 @@ footer nav ul {
 
     list-style: none; /* Remove bullets from the footer's ul */
 
-    padding: 20; /* Remove default padding */
+    padding: 20px; /* Remove default padding */
 
     margin: 0; /* Remove default margin */
 
@@ -362,22 +353,6 @@ footer nav ul li a:hover {
 }
 
 
-
-/* Responsive Design */
-
-@media screen and (max-width: 768px) {
-
-    /* Remove margins and make container full-width */
-
-    .container {
-
-        max-width: 100%;
-
-        margin: 0;
-
-        padding: 0 15px;
-
-    }
 
 
     /* Section Padding */
