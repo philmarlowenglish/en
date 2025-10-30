@@ -40,10 +40,10 @@
   <div id="footer"></div>
 
   <script>
-    // Load header *inside* the <header> tag
-    fetch("header.html")
-      .then(r => r.text())
-      .then(data => document.getElementById("header").innerHTML = data);
+// Load header *inside* the new div
+fetch("header.html")
+  .then(r => r.text())
+  .then(data => document.getElementById("header-wrapper").innerHTML = data); // TARGET NEW ID
 
     // Load footer as usual
     fetch("footer.html")
