@@ -35,11 +35,6 @@ body {
     padding: 0 20px; /* Add padding for content inside the container */
 }
 
-/* Ensure main content doesn’t block sticky positioning */
-main {
-    overflow: visible !important;
-}
-
 header .container .header-image {
     display: block;
     width: 100%;
