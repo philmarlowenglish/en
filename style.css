@@ -88,12 +88,17 @@ body {
   color: white;
   z-index: 1000;
   
-  /* 🖼️ NEW BACKGROUND IMAGE PROPERTIES */
-  background-image: url('header-logo-text.png'); /* ⬅️ UPDATE: Use your image file name here */
-  background-size: cover; /* Ensures the image covers the full width */
-  background-position: center; /* Centers the image content */
-  background-repeat: no-repeat; /* Prevents tiling */
-  min-height: 100px; /* ⬅️ SET HEIGHT: Define the height of the header bar */
+  /* 📐 REINTRODUCE PADDING: 
+     Use 1px vertical padding to help the sticky calculation, 
+     but zero horizontal padding since the image fills the width. */
+  padding: 1px 0; 
+  
+  /* 🖼️ NEW BACKGROUND IMAGE PROPERTIES */
+  background-image: url('header-logo-text.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100px;
 }
 
 header .container {
