@@ -1,6 +1,10 @@
 style.css
 
-
+/* ADD THIS BLOCK to ensure smooth, predictable scrolling */
+html, body {
+    /* Ensures the body takes up the entire viewport height */
+    height: 100%; 
+}
 
 /* General Reset */
 
