@@ -80,64 +80,27 @@ body {
 
 /* Make the header stay at the top when scrolling */
 
+/* Make the header stay at the top when scrolling */
 #header {
-
-  position: sticky;
-
-  top: 0;
-
-  background-color: #000022;
-
-  color: white;
-
-  z-index: 1000;
-
+  position: sticky;
+  top: 0;
+  background-color: #000022;
+  color: white;
+  z-index: 1000;
+  
+  /* 🖼️ NEW BACKGROUND IMAGE PROPERTIES */
+  background-image: url('header-logo-text.png'); /* ⬅️ UPDATE: Use your image file name here */
+  background-size: cover; /* Ensures the image covers the full width */
+  background-position: center; /* Centers the image content */
+  background-repeat: no-repeat; /* Prevents tiling */
+  min-height: 100px; /* ⬅️ SET HEIGHT: Define the height of the header bar */
 }
-
-
 
 header .container {
-
-    display: flex;
-
-    align-items: center;
-
-    background-color: #000022;
-
-}
-
-
-
-/* --- Desktop Header: 20% Logo, 80% Title --- */
-
-header .logo {
-
-    width: 20%; /* 20% width for the logo container */
-    min-width: 75px; /* Ensures the logo container is at least 75px wide */
-    text-align: center; /* Center the logo image inside its 20% column */
-
-}
-
-
-
-header .site-name {
-
-    width: 75%; /* 80% width for the title container */
-
-    text-align: center; /* Center the H1 text inside its 80% column */
-
-}
-
-
-
-/* Additional tweaks to ensure perfect vertical alignment */
-
-header h1 {
-
-    margin: 0; /* Remove any default margin */
-
-    line-height: 1; /* Ensures title text doesn't push content */
-
+    /* Container does not need flex, just needs to fit content */
+    display: block; 
+    /* The background color is now on #header */
+    background-color: transparent; 
 }
 
 /* Section Styling */
@@ -390,35 +353,6 @@ footer nav ul li a:hover {
 
     }
 
-
-
-    /* Header Centering Fixes */
-
-    #header .container {
-
-        flex-direction: column; 
-
-        align-items: center;    
-
-        gap: 5px;               
-
-    }
-
-
-
-    /* Header Text Size Adjustment (Using Specificity) */
-
-    #header .site-name h1 {
-
-        /* Set the header title to 1.8rem */
-
-        font-size: 1.8rem; 
-
-        text-align: center; 
-
-    }
-
-    
 
     /* Section Padding */
 
