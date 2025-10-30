@@ -102,10 +102,10 @@ body {
 }
 
 header .container {
-    /* Container does not need flex, just needs to fit content */
-    display: block; 
-    /* The background color is now on #header */
-    background-color: transparent; 
+    display: block; 
+    background-color: transparent;
+    /* 🎯 FIX: Force the inner container to match the header's height */
+    min-height: 100px; 
 }
 
 /* Section Styling */
