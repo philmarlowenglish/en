@@ -1,5 +1,3 @@
-style.css
-
 /* 💥 CRITICAL FIX: Explicitly define the root scrolling container */
 html {
     overflow-y: scroll; /* Ensures scrollbar is always visible */
@@ -7,390 +5,204 @@ html {
 }
 
 /* General Reset */
-
 * {
-
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;
-
     font-family: 'OpenSans', sans-serif;
-
 }
 
-
-
-/* Load Montserrat Font from Root Directory */
-
+/* Load OpenSans Font from Root Directory */
 @font-face {
-
     font-family: 'OpenSans';
-
     src: url('OpenSans-Regular.ttf') format('truetype');
-
     font-weight: 400;
-
     font-style: normal;
-
 }
-
-
 
 @font-face {
-
     font-family: 'OpenSansExtraBold';
-
     src: url('OpenSans-ExtraBold.ttf') format('truetype');
-
     font-weight: 800;
-
     font-style: normal;
-
 }
-
-
-
-/* Body Styling */
 
 /* Body Styling */
 body {
-    font-family: 'OpenSans', regular;
-    line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
-    /* ❌ DELETE height: 100% if it was here */
+    font-family: 'OpenSans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
     min-height: 100vh; /* Ensures content has at least a viewport height */
-    margin: 0; /* Ensures no default margin outside the header */
+    margin: 0; /* Prevents default margin */
 }
-
-
 
 /* Layout Container Styling */
-
 .container {
-
     max-width: 60%; /* Limit container width to 60% of the viewport */
-
     margin: 0 auto; /* Center the container */
-
     padding: 0 20px; /* Add padding for content inside the container */
-
 }
 
-/* 💥 ADD THE FINAL STICKY OVERRIDE HERE */
+/* Ensure main content doesn’t block sticky positioning */
 main {
     overflow: visible !important;
 }
-/* ________________________________________ */
 
-
-/* Make the header stay at the top when scrolling */
-#header {
-  position: sticky;
-  top: 0;
-  background-color: #000022; /* Keeps the color */
-  color: white;
-  z-index: 1000;
-  padding: 10px 0;
-  
-  /* 📐 ADD MINIMUM HEIGHT to ensure visibility */
-  min-height: 80px; 
-  
-  transform: translateZ(0);
-  width: 100%;
+/* ✅ FIXED: Sticky Header */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #000022;
+    color: white;
+    z-index: 1000;
+    padding: 10px 0;
+    min-height: 80px; /* Ensures header visibility */
+    /* Removed transform: translateZ(0); — it breaks sticky */
 }
 
+/* Header container */
 header .container {
-    /* 🗑️ REMOVE: min-height: 100px; */
-    display: block; 
-    background-color: transparent;
-    /* 🎯 FIX: Ensure the container centers the content */
+    display: block;
+    background-color: transparent;
     text-align: center;
 }
 
-/* ADD: Styles for the new foreground image */
+/* Header image styling */
 header .container .header-image {
     display: block;
-    /* Ensures the image uses 100% of the available 60% container width */
     width: 100%;
-    /* Prevents pixelated look on high-res displays */
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
 }
 
 /* Section Styling */
-
 section {
-
     padding: 10px 10px;
-
 }
-
-
 
 /* Alternating Section Colors */
-
 .hero {
-
     background-color: #ffffff;
-
-    text-align: center; /* Horizontally center text */
-
-    display: flex; /* Use flexbox for vertical centering */
-
-    flex-direction: column; /* Stack items vertically */
-
-    justify-content: center; /* Center items vertically */
-
-    align-items: center; /* Horizontally center items */
-
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-
 
 .usp {
-
-    background-color: #eeeeee; /* Light grey */
-
+    background-color: #eeeeee;
 }
-
-
 
 .services {
-
     background-color: #ffffff;
-
 }
-
-
 
 .image {
-
     background-color: #ffffff;
-
 }
-
-
 
 .contact {
-
     background-color: #eeeeee;
-
 }
-
-
 
 .testimonials {
-
     background-color: #ffffff;
-
 }
-
-
 
 /* Main Heading and Subheadings */
-
 h1, h2, h3 {
-
     font-family: 'OpenSansExtraBold', 'OpenSans', sans-serif;
-
     font-weight: 800;
-
 }
-
-
 
 h1 {
-
     font-size: 2.5rem;
-
 }
-
-
 
 h2 {
-
     font-size: 2rem;
-
 }
-
-
 
 h3 {
-
     font-size: 1.5rem;
-
 }
-
-
 
 /* Social Media Icons */
-
 .social-icons, .footer-social-icons {
-
     display: flex;
-
     justify-content: center;
-
     gap: 10px;
-
     margin-top: 20px;
-
 }
-
-
 
 .social-icons img, .footer-social-icons img {
-
     width: 24px;
-
     height: 24px;
-
 }
-
-
 
 /* Footer Styling */
-
 footer {
-
-    background-color: #000022; /* Dark Blue Background */
-
+    background-color: #000022;
     color: #fff;
-
     padding: 20px;
-
     text-align: center;
-
 }
-
-
 
 footer nav ul {
-
-    list-style: none; /* Remove bullets from the footer's ul */
-
-    padding: 20px; /* Remove default padding */
-
-    margin: 0; /* Remove default margin */
-
-    display: flex; /* Align items horizontally */
-
-    justify-content: center; /* Center align footer links */
-
-    gap: 15px; /* Space between footer links */
-
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
-
-
 
 footer nav ul li {
-
-    list-style: none; /* Explicitly remove bullets from footer li */
-
+    list-style: none;
 }
-
-
 
 footer nav ul li a {
-
-    color: #fff; /* Make the text white */
-
-    text-decoration: none; /* No underline */
-
-    font-weight: 500; /* Consistent font weight */
-
-    font-size: 1rem; /* Set readable font size */
-
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
 }
-
-
 
 footer nav ul li a:hover {
-
-    text-decoration: none; /* Ensure no underline on hover as well */
-
-    opacity: 0.8; /* Optional: Slight opacity change for hover effect */
-
+    opacity: 0.8;
 }
 
-
-
-
-
-/* Mobile Styles */
-
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-
-    /* Remove margins and make container full-width */
-
     .container {
-
         max-width: 100%;
-
         margin: 0;
-
-        padding: 0 15px; /* Adjust padding for better fit */
-
+        padding: 0 15px;
     }
-
-}
-
-
-
-/* Images */
-
-.main-image img {
-
-    max-width: 100%;
-
-    height: auto;
-
-    border-radius: 5px;
-
-}
-
-
-
-
-    /* Section Padding */
 
     section {
-
-        padding: 20px 20px; 
-
+        padding: 20px 20px;
     }
-
-
-
-    /* Main Content Heading Sizes */
-
-    /* This targets all other H1s outside the header */
 
     h1 {
-
-        /* Set all other H1s to the same size: 1.8rem */
-
-        font-size: 1.8rem; 
-
+        font-size: 1.8rem;
     }
-
-
 
     h2 {
-
         font-size: 1.6rem;
-
     }
-
-
 
     h3 {
-
         font-size: 1.3rem;
-
     }
+}
 
+/* Images */
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
