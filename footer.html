@@ -1,35 +1,44 @@
-<!-- footer.html -->
+<footer role="contentinfo">
+  <div class="footer-content">
+    <p>&copy; <span id="year"></span> MySite. All rights reserved.</p>
+    <nav aria-label="Footer links">
+      <a href="#privacy">Privacy Policy</a> |
+      <a href="#terms">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Freelancer website - services and contact information">
-    <title>Phil Marlow English</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
+<script>
+  // Auto-update year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
-<footer>
-        <div class="container">
-            <nav>
-                <p>&copy; 2024 Phil Marlow English</p>
-                <ul>
-                    <li><a href="imprint.html">Imprint</a></li>
-                    <li>|</li>
-                    <li><a href="privacy.html">Data privacy policy</a></li>
-                </ul>
-            </nav>
-            <!-- Social Media Icons -->
-            <div class="footer-social-icons">
-                <a href="https://www.instagram.com/philmarlowenglish/" target="_blank" rel="noopener noreferrer">
-                    <img src="instagram-icon.png" alt="Instagram" width="24" height="24">
-                </a>
-                <a href="https://www.linkedin.com/in/philmarlowenglish/" target="_blank" rel="noopener noreferrer">
-                    <img src="linkedin-icon.png" alt="LinkedIn" width="24" height="24">
-                </a>
-            </div>
-        </div>
-    </footer>
-  
+<style>
+  /* Footer-specific styles */
+  .footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  footer nav a {
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  footer nav a:hover,
+  footer nav a:focus {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+
+  @media (min-width: 600px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+</style>
