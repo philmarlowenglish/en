@@ -1,18 +1,98 @@
-<!-- header.html -->
+<header role="banner">
+  <nav aria-label="Main navigation">
+    <a href="/" class="logo" aria-label="Home">
+      <strong>MySite</strong>
+    </a>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Freelancer website - services and contact information">
-    <title>Phil Marlow English</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
+    <!-- Accessible menu toggle for mobile -->
+    <button
+      class="menu-toggle"
+      aria-controls="primary-menu"
+      aria-expanded="false"
+    >
+      ☰ <span class="visually-hidden">Menu</span>
+    </button>
 
-<header class="site-header" id="header">
-  <div class="container">
-    <img src="header-logo-text.png" alt="Phil Marlow English logo and site name" class="header-image">
-  </div>
+    <ul id="primary-menu" class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
+
+<script>
+  // Accessible mobile menu toggle
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('#primary-menu');
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', !expanded);
+    menu.classList.toggle('open');
+  });
+</script>
+
+<style>
+  /* Add-on styles specific to header */
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+  }
+
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    color: var(--color-accent);
+  }
+
+  /* Show horizontal nav on larger screens */
+  @media (min-width: 600px) {
+    .menu-toggle {
+      display: none;
+    }
+
+    .nav-links {
+      display: flex !important;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+</style>
