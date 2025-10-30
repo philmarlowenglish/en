@@ -99,15 +99,16 @@ main {
 #header {
   position: sticky;
   top: 0;
-  background-color: #000022;
+  background-color: #000022; /* Keeps the color */
   color: white;
   z-index: 1000;
+  padding: 10px 0;
   
-  /* 📐 RESTORE VERTICAL SPACING for the content */
-  padding: 10px 0; 
-    transform: translateZ(0);
-
-  /* 🗑️ REMOVE: background-image, background-size, min-height, width */
+  /* 📐 ADD MINIMUM HEIGHT to ensure visibility */
+  min-height: 80px; 
+  
+  transform: translateZ(0);
+  width: 100%;
 }
 
 header .container {
