@@ -94,6 +94,7 @@ body {
   
   /* 📐 RESTORE VERTICAL SPACING for the content */
   padding: 10px 0; 
+    transform: translateZ(0);
 
   /* 🗑️ REMOVE: background-image, background-size, min-height, width */
 }
