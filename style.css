@@ -88,24 +88,28 @@ body {
   color: white;
   z-index: 1000;
   
-  /* 📐 REINTRODUCE PADDING: 
-     Use 1px vertical padding to help the sticky calculation, 
-     but zero horizontal padding since the image fills the width. */
-  padding: 1px 0; 
-  
-  /* 🖼️ NEW BACKGROUND IMAGE PROPERTIES */
-  background-image: url('header-logo-text.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100px;
+  /* 📐 RESTORE VERTICAL SPACING for the content */
+  padding: 10px 0; 
+
+  /* 🗑️ REMOVE: background-image, background-size, min-height, width */
 }
 
 header .container {
+    /* 🗑️ REMOVE: min-height: 100px; */
     display: block; 
     background-color: transparent;
-    /* 🎯 FIX: Force the inner container to match the header's height */
-    min-height: 100px; 
+    /* 🎯 FIX: Ensure the container centers the content */
+    text-align: center;
+}
+
+/* ADD: Styles for the new foreground image */
+header .container .header-image {
+    display: block;
+    /* Ensures the image uses 100% of the available 60% container width */
+    width: 100%;
+    /* Prevents pixelated look on high-res displays */
+    max-width: 100%; 
+    height: auto;
 }
 
 /* Section Styling */
