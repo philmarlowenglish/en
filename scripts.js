@@ -16,3 +16,36 @@ window.addEventListener('DOMContentLoaded', () => {
   loadPart('site-footer', 'footer.html');
   loadFonts('fonts.html'); // ✅ Load your font styles
 });
+
+// -----------------------------
+// Carousel functionality
+// -----------------------------
+let currentSlide = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll("#carousel .slide");
+  if (!slides.length) return; // do nothing if no carousel on page
+  slides.forEach((slide, i) => {
+    slide.style.display = i === index ? "block" : "none";
+  });
+}
+
+function nextSlide() {
+  const slides = document.querySelectorAll("#carousel .slide");
+  if (!slides.length) return;
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  const slides = document.querySelectorAll("#carousel .slide");
+  if (!slides.length) return;
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Auto-advance carousel every 5 seconds
+setInterval(() => {
+  const slides = document.querySelectorAll("#carousel .slide");
+  if (slides.length) nextSlide();
+}, 5000);
