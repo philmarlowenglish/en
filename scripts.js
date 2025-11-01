@@ -43,9 +43,3 @@ function prevSlide() {
   currentSlide = (currentSlide - 1 + slides.length) % slides.length;
   showSlide(currentSlide);
 }
-
-// Auto-advance carousel every 5 seconds
-setInterval(() => {
-  const slides = document.querySelectorAll("#carousel .slide");
-  if (slides.length) nextSlide();
-}, 5000);
