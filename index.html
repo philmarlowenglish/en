@@ -40,30 +40,35 @@
 
 <!-- Section: Client Recommendations -->
 <section style="background:#f8f8f8; padding:2em 1em;">
-  <div style="max-width:600px; margin:auto; text-align:left;">
-    <h2>What my clients say</h2>
+  <div style="max-width:600px; margin:auto;">
 
-    <div id="carousel" style="position:relative; overflow:hidden; height:160px; margin-top:1.5em;">
+    <!-- Left-aligned heading -->
+    <h2 style="text-align:left; margin-bottom:1em;">What My Clients Say</h2>
+
+    <!-- Carousel container (centered content) -->
+    <div id="carousel" style="position:relative; overflow:hidden; height:160px; margin-top:1.5em; text-align:center;">
 
       <!-- Testimonial slides -->
       <div class="slide" style="display:block;">
-        <p>[...]</p>
+        <p>"[...]"</p>
         <p><strong>– [...]</strong></p>
       </div>
 
       <div class="slide" style="display:none;">
-        <p>[...]</p>
+        <p>"[...]"</p>
         <p><strong>– [...]</strong></p>
       </div>
 
       <div class="slide" style="display:none;">
-        <p>[...]</p>
+        <p>"[...]"</p>
         <p><strong>– [...]</strong></p>
       </div>
 
       <!-- Navigation arrows -->
-      <button onclick="prevSlide()" style="position:absolute; left:0; top:50%; transform:translateY(-50%); background:none; border:none; font-size:1.5em; cursor:pointer;">&#10094;</button>
-      <button onclick="nextSlide()" style="position:absolute; right:0; top:50%; transform:translateY(-50%); background:none; border:none; font-size:1.5em; cursor:pointer;">&#10095;</button>
+      <button onclick="prevSlide()" 
+        style="position:absolute; left:0; top:50%; transform:translateY(-50%); background:none; border:none; font-size:1.5em; cursor:pointer;">&#10094;</button>
+      <button onclick="nextSlide()" 
+        style="position:absolute; right:0; top:50%; transform:translateY(-50%); background:none; border:none; font-size:1.5em; cursor:pointer;">&#10095;</button>
     </div>
   </div>
 </section>
