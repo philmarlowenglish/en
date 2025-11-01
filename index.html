@@ -46,29 +46,36 @@
     <h2 style="text-align:left; margin-bottom:1em;">What My Clients Say</h2>
 
     <!-- Carousel container (centered content) -->
-    <div id="carousel" style="position:relative; overflow:hidden; height:160px; margin-top:1.5em; text-align:center;">
+    <div id="carousel" style="position:relative; overflow:hidden; min-height:160px; margin-top:1.5em; text-align:center;">
 
       <!-- Testimonial slides -->
       <div class="slide" style="display:block;">
-        <p>"The openness and welcoming style of Phil’s training sessions has helped even our most introverted team members to confidently do business in English on a daily basis."</p>
-        <p><strong>– Ralph Cibis, Senior Tech Project Manager, Thomann.io</strong></p>
+        <p>"Fantastic experience — professional and easy to work with."</p>
+        <p><strong>– Alex M.</strong></p>
       </div>
 
       <div class="slide" style="display:none;">
-        <p>"[...]"</p>
-        <p><strong>– [...]</strong></p>
+        <p>"They understood exactly what we needed and delivered perfectly."</p>
+        <p><strong>– Jamie L.</strong></p>
       </div>
 
       <div class="slide" style="display:none;">
-        <p>"[...]"</p>
-        <p><strong>– [...]</strong></p>
+        <p>"I recommend them to anyone looking for reliable, high-quality work."</p>
+        <p><strong>– Chris D.</strong></p>
       </div>
 
-      <!-- Navigation arrows -->
-      <button onclick="prevSlide()" 
-        style="position:absolute; left:0; top:50%; transform:translateY(-50%); background:none; border:none; font-size:1.5em; cursor:pointer;">&#10094;</button>
-      <button onclick="nextSlide()" 
-        style="position:absolute; right:0; top:50%; transform:translateY(-50%); background:none; border:none; font-size:1.5em; cursor:pointer;">&#10095;</button>
+      <!-- Compact controls in the bottom-right corner -->
+      <div style="position:absolute; bottom:0.5em; right:0.75em; font-size:1.2em; user-select:none;">
+        <button onclick="prevSlide()" 
+          style="background:none; border:none; color:#000; cursor:pointer; font-size:1em; margin-right:0.25em;">
+          &lt;
+        </button>
+        <button onclick="nextSlide()" 
+          style="background:none; border:none; color:#000; cursor:pointer; font-size:1em;">
+          &gt;
+        </button>
+      </div>
+
     </div>
   </div>
 </section>
