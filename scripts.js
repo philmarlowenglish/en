@@ -38,7 +38,7 @@ main {
     /* Desktop and tablet view */
   @media (min-width: 768px) {
     main {
-      width: 70%;
+      width: 85%;
       max-width: 800px;
     }
   }
