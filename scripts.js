@@ -27,11 +27,12 @@ function loadGlobalStyles() {
       min-height: 100vh;
     }
 
-    main {
+main {
   width: 100%;
   max-width: 100%;
+  padding: 1.5em;
   margin: 0 auto;
-  padding: 1.5em; /* more space inside on mobile */
+  box-sizing: border-box; /* ✅ includes padding inside width */
 }
 
     /* Desktop and tablet view */
