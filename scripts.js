@@ -38,15 +38,14 @@ main {
     /* Desktop and tablet view */
   @media (min-width: 768px) {
     main {
-      width: 60%;
+      width: 70%;
       max-width: 800px;
-      padding: 2em; /* a bit more spacing for large screens */
     }
   }
 
     h1, h2, h3 {
       font-family: 'Open Sans ExtraBold', sans-serif;
-      margin-top: 1.5em;
+      margin-top: 1em; /* reduced from 1.5em */
     }
 
     p {
