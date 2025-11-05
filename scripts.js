@@ -28,19 +28,20 @@ function loadGlobalStyles() {
     }
 
     main {
-      width: 100%;
-      max-width: 100%;
-      margin: auto;
-      padding: 1em;
-    }
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5em; /* more space inside on mobile */
+}
 
     /* Desktop and tablet view */
-    @media (min-width: 768px) {
-      main {
-        width: 60%;
-        max-width: 800px;
-      }
+  @media (min-width: 768px) {
+    main {
+      width: 60%;
+      max-width: 800px;
+      padding: 2em; /* a bit more spacing for large screens */
     }
+  }
 
     h1, h2, h3 {
       font-family: 'Open Sans ExtraBold', sans-serif;
