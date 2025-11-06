@@ -30,7 +30,7 @@ function loadGlobalStyles() {
 main {
   width: 100%;
   max-width: 100%;
-  padding: 1.5em;
+  padding: 1em;
   margin: 0 auto;
   box-sizing: border-box; /* ✅ includes padding inside width */
 }
