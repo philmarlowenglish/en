@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debt - Phil Marlow English blog</title>
+  <meta name="description" content="Why does debt have a silent b?" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="scripts.js" defer></script>
+  
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <main>
+
+<section style="background:#ffffff; padding:1em 1em;" aria-labelledby="blog post">
+  <div>
+    <h1 id="intro">Blog: Why does debt have a silent b?</h1>
+    <img src="phil.png" alt="Phil Marlow" style="display:block; margin:1em auto; width:60%; max-width:300px; height:auto; border-radius:10px;">
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+  </div>
+</section>
+
+<section style="background:#f8f8f8; padding:1em 1em;" aria-labelledby="usp">
+  <div>
+    <h2 id="about">Phil Marlow English - English training and coaching in Germany</h2>
+    <img src="phil.png" alt="Phil Marlow" style="display:block; margin:1em auto; width:60%; max-width:300px; height:auto; border-radius:10px;"> 
+    <p>text</p>
+    <p>text</p>
+    <p><p>Contact me at <a href=mailto:philmarlowenglish@gmail.com>philmarlowenglish@gmail.com</a> to organise a free consultation call.</p></p>
+  </div>
+</section>
+
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
