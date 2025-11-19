@@ -83,7 +83,38 @@ function loadGlobalStyles() {
     a:hover {
       text-decoration: underline;
     }
-  `;
+
+.accordion {
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+
+  .accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+    font-size: 1.1em;
+    background: #f7f7f7;
+    border: none;
+    cursor: pointer;
+  }
+
+  .accordion-header.open {
+    background: #eaeaea;
+  }
+
+  .accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+    padding: 0 1em;
+  }
+
+  .accordion-content p {
+    margin: 1em 0;
+  }
+`;
 
   const styleTag = document.createElement('style');
   styleTag.textContent = styles;
