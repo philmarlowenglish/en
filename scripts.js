@@ -17,23 +17,6 @@ async function loadFonts(file) {
   document.head.insertAdjacentHTML('beforeend', text);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".accordion-header").forEach(header => {
-    header.addEventListener("click", () => {
-      const content = header.nextElementSibling;
-      
-      // Toggle height
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-
-      header.classList.toggle("open");
-    });
-  });
-});
-
 // -----------------------------
 // Global site-wide styles
 // -----------------------------
@@ -84,36 +67,6 @@ function loadGlobalStyles() {
       text-decoration: underline;
     }
 
-.accordion {
-    margin-bottom: 1em;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-  }
-
-  .accordion-header {
-    width: 100%;
-    text-align: left;
-    padding: 1em;
-    font-size: 1.1em;
-    background: #f7f7f7;
-    border: none;
-    cursor: pointer;
-  }
-
-  .accordion-header.open {
-    background: #eaeaea;
-  }
-
-  .accordion-content {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.25s ease-out;
-    padding: 0 1em;
-  }
-
-  .accordion-content p {
-    margin: 1em 0;
-  }
 `;
 
   const styleTag = document.createElement('style');
