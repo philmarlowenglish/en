@@ -17,6 +17,23 @@ async function loadFonts(file) {
   document.head.insertAdjacentHTML('beforeend', text);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".accordion-header").forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      
+      // Toggle height
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+
+      header.classList.toggle("open");
+    });
+  });
+});
+
 // -----------------------------
 // Global site-wide styles
 // -----------------------------
