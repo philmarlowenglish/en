@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Google (Gemini & Search)
+User-agent: Google-Extended
+Allow: /
+User-agent: Gemini-Deep-Research
+Allow: /
+
+# Microsoft (Copilot & Bing)
+User-agent: Bingbot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+
+# Apple & Meta
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# General AI Training Data
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://philmarlowenglish.com/sitemap.xml
